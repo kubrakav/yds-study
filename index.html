@@ -175,6 +175,22 @@ nav.tabs a.on svg{color:var(--hl2)}nav.tabs a.on::after{background:var(--hl2)}
  .pick.ok{animation:glow 1.2s ease}@keyframes glow{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent)}100%{box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 25%,transparent),0 0 18px color-mix(in srgb,var(--ok) 35%,transparent)}}
 }
 
+
+/* ---- Kübra kartı ve tezahürat balonu ---- */
+.hi{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;align-items:start;border:2px solid var(--hl2)}
+.hi img{width:76px;height:76px;border-radius:50%;image-rendering:pixelated;box-shadow:0 0 0 3px var(--hl)}
+.hi h3{margin:.1em 0 .3em}.hi p{margin:.35em 0;font-size:15px}
+@media(max-width:420px){.hi{grid-template-columns:56px minmax(0,1fr)}.hi img{width:56px;height:56px}}
+.hi-mini{display:inline-flex;align-items:center;gap:8px;font-size:13px;min-height:36px;padding:4px 10px 4px 4px;margin-bottom:8px}.hi-mini img{width:28px;height:28px;border-radius:50%;image-rendering:pixelated}
+.footav{width:22px;height:22px;border-radius:50%;vertical-align:middle;margin-right:6px;image-rendering:pixelated}
+.buddy{position:fixed;right:14px;bottom:96px;z-index:70;display:flex;align-items:flex-end;gap:8px;cursor:pointer;max-width:min(340px,calc(100vw - 28px))}
+@media(min-width:900px){.buddy{bottom:24px}}
+.buddy img{width:72px;height:72px;border-radius:50%;image-rendering:pixelated;box-shadow:0 4px 14px rgba(0,0,0,.25),0 0 0 3px #fff;flex:none}
+.buddy .bubble{position:relative;background:#fff;color:#1d1530;border:2px solid var(--hl2);border-radius:16px 16px 4px 16px;padding:10px 14px;font:700 15px/1.35 Archivo,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.buddy .bubble::after{content:"";position:absolute;right:-9px;bottom:10px;border:8px solid transparent;border-left-color:var(--hl2)}
+@media(prefers-reduced-motion:no-preference){.buddy{animation:bin .55s cubic-bezier(.2,1.4,.4,1)}.buddy img{animation:bob 1.2s ease-in-out 2}.buddy.out{animation:bout .35s ease forwards}
+ @keyframes bin{from{transform:translateY(120px) scale(.6);opacity:0}}@keyframes bout{to{transform:translateY(40px);opacity:0}}@keyframes bob{50%{transform:translateY(-6px) rotate(-4deg)}}}
+
 /* ---- hedef ve plan ---- */
 .seg{margin-bottom:6px}.daysrow[hidden]{display:none}.daysrow{max-height:180px;overflow-y:auto;padding:2px}.daysrow button.done:not(.pri){border-color:var(--ok);color:var(--ok)}
 .plancard{display:block;border:2px solid var(--pen);background:linear-gradient(135deg,color-mix(in srgb,var(--pen) 10%,var(--card)),var(--card))}
@@ -870,7 +886,7 @@ function catOf(q){const id=q.id||"";let m;
   if(m=id.match(/^c-(\d+)/)){const c=CQ.find(x=>x.i==+m[1]);return c&&c.k==="pv"?"Phrasal verb'ler":"Edat kalıpları"}
   return"Kelime"}
 const today=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
-function track(q,ok){const c=catOf(q);S.st=S.st||{};const e=S.st[c]||(S.st[c]={c:0,n:0});e.n++;if(ok)e.c++;S.day=S.day||{};S.day[today()]=(S.day[today()]||0)+1}
+function track(q,ok){const _b=(S.day||{})[today()]||0;setTimeout(()=>{const _a=(S.day||{})[today()]||0,g=S.goal||40;if(_b<g&&_a>=g){const n=streak();cheer(n>1?"streak":"goal",n)}});const c=catOf(q);S.st=S.st||{};const e=S.st[c]||(S.st[c]={c:0,n:0});e.n++;if(ok)e.c++;S.day=S.day||{};S.day[today()]=(S.day[today()]||0)+1}
 function streak(){let n=0;const d=new Date();for(;;){const k=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");if((S.day||{})[k]>=(S.goal||40))n++;else if(n>0||k!==today())break;d.setDate(d.getDate()-1);if(n>400)break}return n}
 function weak(min){return Object.entries(S.st||{}).filter(([c,e])=>e.n>=(min||5)).map(([c,e])=>[c,Math.round(e.c/e.n*100),e.n]).sort((a,b)=>a[1]-b[1])}
 const tipOf=c=>((window.EXTRA2||{}).tips||{})[c]||((window.EXTRA2||{}).tips||{})._gram||"";
@@ -938,6 +954,7 @@ function home(){
   const P=progressData();
   const PL=S.plan;
   app.innerHTML=`<h1>YDS Çalışma</h1>
+  ${hiCard()}
   <p class="mut">Kelime, dil bilgisi, okuma ve sınav formatında testler; her soruda Türkçe çeviri ve yanlış şıkların açıklaması. İlerlemen yalnızca bu tarayıcıda saklanır.</p>
   <a class="card hero" href="#ilerleme" style="text-decoration:none;color:inherit"><div><p class="small mut" style="margin:0">YDS/1'e kalan süre</p>${cdHtml()}<p class="small" style="margin:.4em 0 0">80 soru · 180 dakika · yanlış doğruyu götürmez. ${PL?`Hedefin ${PL.target}: ${Math.ceil(PL.target/1.25)} doğru yeter.`:"80 puan için 64 doğru yeter."}</p></div>
   <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center">${ring(P.overall)}<div class="bars">${P.cats.slice(0,4).map(c=>barRow(c[0],c[1],c[2])).join("")}<p class="small" style="margin:6px 0 0;color:var(--pen);font-weight:600">Ayrıntılı ilerleme →</p></div></div></a>
@@ -957,7 +974,7 @@ function home(){
   <h2>Sınav ritmi · süreli 5 şıklı</h2>${ritimHtml()}
   ${wc?`<div class="card row"><span><b>${wc}</b> soru “Yanlışlarım” listende</span><button id="gowrong">Yanlışları tekrar et</button></div>`:""}`;
   app.insertAdjacentHTML("beforeend",FOOT);
-  bindR();startCd();bindGoal();
+  bindR();startCd();bindGoal();bindHi();
   const g=document.getElementById("gowrong");if(g)g.onclick=()=>run(Object.keys(S.wrong).map(regen).filter(Boolean),"Yanlışlarım");
 }
 
@@ -1243,7 +1260,7 @@ function run(qs,title,bestKey,secs,pq){
   clearInterval(timer);clearInterval(qt);let i=0,score=0,picked=null,blank=0;const wrong=[],times=[];let left=secs||0,t0=0;
   const fmt=s=>Math.floor(Math.max(0,s)/60)+":"+String(Math.max(0,s)%60).padStart(2,"0");
   if(secs)timer=setInterval(()=>{left--;const t=document.getElementById("clock");if(t)t.textContent=fmt(left);if(left<=0){clearInterval(timer);end()}},1000);
-  const end=()=>{clearInterval(timer);clearInterval(qt);if(bestKey)S.best[bestKey]=Math.max(S.best[bestKey]||0,score);save();if(qs.length&&score/qs.length>=.8)setTimeout(confetti,200);
+  const end=()=>{clearInterval(timer);clearInterval(qt);if(qs.length>=5&&score/qs.length>=.8)setTimeout(()=>cheer(score===qs.length?"perfect":"great"),900);if(bestKey)S.best[bestKey]=Math.max(S.best[bestKey]||0,score);save();if(qs.length&&score/qs.length>=.8)setTimeout(confetti,200);
     const avg=times.length?Math.round(times.reduce((x,y)=>x+y,0)/times.length):0;
     app.innerHTML=`<h1>${title}</h1><div class="card"><div class="big">${score}/${qs.length}</div><p class="mut">doğru${blank?` · ${blank} soru süre dolduğu için boş`:""} · YDS ölçeğinde yaklaşık ${Math.round(score/qs.length*100)} puan</p>
     <p><b>Ortalama ${avg} sn / soru.</b> <span class="mut small">${pq?`Hedef: ${pq} sn içinde.`:""} Gerçek sınavda ilk 16 soruyu (kelime + dilbilgisi) 15–18 dakikada bitirmek, okumaya zaman bırakır.</span></p></div>
@@ -1368,7 +1385,7 @@ function baglamAvi(){
     const lose=()=>{if(done)return;combo=0;lives--;res.push([w,false]);S.box[w.w]=0;track({id:"v-"+w.w},false);save();
       pos=letters.length;document.getElementById("sl").innerHTML=letters.map(c=>`<div class="slot rev">${c}</div>`).join("");after(false,0)};
   };
-  const over=()=>{document.onkeydown=null;const best=S.gbest||0;if(score>best){S.gbest=score}save();if(lives===3||score>best)confetti();
+  const over=()=>{document.onkeydown=null;const best=S.gbest||0;if(score>best){S.gbest=score;setTimeout(()=>cheer("record"),600)}save();if(lives===3||score>best)confetti();
     const ok=res.filter(r=>r[1]).length;
     app.innerHTML=`<h1>Bağlam Avı bitti</h1><div class="card hero"><div><div class="big">${score}</div><p class="mut">puan${score>best?" · yeni rekor!":` · rekor ${best}`}</p></div>
      <div><p><b>${ok}/${res.length}</b> kelimeyi kurdun · ${hearts()}</p><p class="small">Bilemediğin kelimeler kelime kartlarında öne alındı; yazdığın cümleler Cümle defterinde.</p></div></div>
@@ -1389,7 +1406,7 @@ function eslestir(){
    <div class="gtimer"><i id="mtb" style="width:100%"></i></div><p class="small mut">Soldan İngilizce kelimeye, sonra sağdan Türkçe anlamına dokun. Yanlış eşleştirme 3 saniye götürür.</p><div class="mgrid" id="mg"></div>`;
   document.getElementById("mq").onclick=()=>{clearInterval(tmr);location.hash="x";location.hash="oyun"};
   deal();tmr=setInterval(()=>{left--;const t=document.getElementById("mt");if(!t){clearInterval(tmr);return}t.textContent=left;document.getElementById("mtb").style.width=(left/60*100)+"%";
-    if(left<=0){clearInterval(tmr);const best=S.mbest||0;if(score>best){S.mbest=score;save();confetti()}
+    if(left<=0){clearInterval(tmr);const best=S.mbest||0;if(score>best){S.mbest=score;save();confetti();cheer("record")}
       app.innerHTML=`<h1>Süre doldu</h1><div class="card"><div class="big">${score}</div><p class="mut">çift eşleştirdin${score>best?" · yeni rekor!":` · rekor ${best}`}</p></div><div class="row"><button class="pri" id="ma">Tekrar</button><button id="mb">Oyun menüsü</button></div>`;
       document.getElementById("ma").onclick=eslestir;document.getElementById("mb").onclick=()=>{location.hash="x";location.hash="oyun"}}},1000);
 }
@@ -1427,7 +1444,7 @@ function dedektif(k){
       c.querySelectorAll("button").forEach(b=>{if(+b.dataset.j===it[2])b.classList.add("right");b.disabled=true});
       track({id:"pw-"+k+"-"+i},ok);
       rows.push(`<li class="${ok?"okr":"badr"}"><b>${it[it[2]]}</b>${!ok?` <span class="small" style="color:var(--bad)">(seçimin: ${sel[n]==null?"boş":it[sel[n]]})</span>`:""}<br><span class="small">${it[3]}</span></li>`)});
-    S.best["pw-"+k]=Math.max(S.best["pw-"+k]||0,sc);save();if(sc/p.items.length>=.8)confetti();
+    S.best["pw-"+k]=Math.max(S.best["pw-"+k]||0,sc);save();if(sc/p.items.length>=.8){confetti();cheer("great")}
     document.getElementById("pwc").disabled=true;
     document.getElementById("pwr").innerHTML=`<div class="card"><div class="big">${sc}/${p.items.length}</div><p class="mut">doğru seçim</p></div><h2>Neden?</h2><ol class="pwexp">${rows.join("")}</ol>
     <div class="row">${k+1<X3.pw.length?`<a class="btn pri" href="#ekstra-md${k+1}" style="display:inline-flex;align-items:center;text-decoration:none">Sonraki metin →</a>`:""}<button id="pwa">Tekrar çöz</button></div>`;
@@ -1453,7 +1470,7 @@ function edatAvcisi(mode){
       document.getElementById("esc").textContent=score;const cb=document.getElementById("ecb");cb.style.display=combo<2?"none":"inline-block";cb.textContent=`x${1+Math.floor(combo/3)} · seri ${combo}`})};
   app.innerHTML=head()+`<div id="ebody"></div>`;document.getElementById("eq").onclick=quit;round();
   tmr=setInterval(()=>{left--;const t=document.getElementById("et");if(!t){clearInterval(tmr);return}t.textContent=Math.max(0,left);document.getElementById("etb").style.width=Math.max(0,left/60*100)+"%";
-    if(left<=0){clearInterval(tmr);save();const best=S.ebest||0;if(score>best){S.ebest=score;save();confetti()}
+    if(left<=0){clearInterval(tmr);save();const best=S.ebest||0;if(score>best){S.ebest=score;save();confetti();cheer("record")}
       const um=[...new Map(miss.map(w=>[w.w+w.p,w])).values()];
       app.innerHTML=`<h1>Süre doldu</h1><div class="card"><div class="big">${score}</div><p class="mut">puan · ${hit.length} doğru, ${miss.length} yanlış${score>best?" · yeni rekor!":` · rekor ${best}`}</p></div>
       ${um.length?`<h2>Kaçırdıkların · bunları tekrar et</h2><ul class="vl">${um.map(w=>`<li><b>${w.w} ${w.p}</b> · ${w.t}</li>`).join("")}</ul>`:""}
@@ -1480,7 +1497,7 @@ function esAnlam(){
       i++;setTimeout(round,good?900:2000)};
     app.querySelectorAll(".eaopts .tile").forEach(b=>b.onclick=()=>fin(b.dataset.o,b));
     qt2=setInterval(()=>{t--;const el=document.getElementById("st");if(!el){clearInterval(qt2);return}el.textContent=Math.max(0,t);document.getElementById("stb").style.width=Math.max(0,t/8*100)+"%";if(t<=0)fin(null,null)},1000)};
-  const over=()=>{const best=S.sbest||0;if(score>best){S.sbest=score;confetti()}save();
+  const over=()=>{const best=S.sbest||0;if(score>best){S.sbest=score;confetti();cheer("record")}save();
     app.innerHTML=`<h1>Düello bitti</h1><div class="card"><div class="big">${score}</div><p class="mut">puan · ${right}/${pool.length} doğru${score>best?" · yeni rekor!":` · rekor ${best}`}</p></div>
     <h2>Kelimeler</h2><ul class="vl">${log.map(([w,g])=>`<li><span style="color:var(${g?"--ok":"--bad"});font-weight:800">${g?"✓":"✗"}</span> <b>${w.w}</b> · ${w.t}<br><span class="small mut">eş: ${w.s}</span></li>`).join("")}</ul>
     <div class="row"><button class="pri" id="sa2">Tekrar</button><button id="sb2">Oyun menüsü</button></div>`;
@@ -1601,7 +1618,30 @@ function renderPlan(){
   <p class="small mut">Puan hesabı: YDS'de her doğru 1,25 puan; yanlış doğruyu götürmez. Sınav tarihlerini her zaman ÖSYM'nin sitesinden kontrol et.</p>`;
 }
 
-const FOOT=`<footer class="foot">YDS Çalışma · © 2026 <a href="https://github.com/kubrakav/yds-study" target="_blank" rel="noopener">kubrakav</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> · ücretsiz kullanılabilir, ticari kullanım ve değiştirilmiş kopyalar yasaktır · veri toplanmaz, ilerlemen yalnızca bu tarayıcıda saklanır</footer>`;
+const FOOT=`<footer class="foot"><img src="avatar.png" alt="" class="footav">YDS Çalışma · ÖSYM ile bağlantısı yoktur, resmî bir kaynak değildir · © 2026 <a href="https://github.com/kubrakav/yds-study" target="_blank" rel="noopener">kubrakav</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> · ücretsiz kullanılabilir, ticari kullanım ve değiştirilmiş kopyalar yasaktır · veri toplanmaz, ilerlemen yalnızca bu tarayıcıda saklanır</footer>`;
+
+/* ===================== KÜBRA: tanıtım ve tezahürat ===================== */
+const CHEERS={
+ great:["Go, Kylie, go! 🚀","You're doing amazing, sweetie! ✨","Good job, Kylie! 👏","Bak sen, kim çalışıyormuş! 💜","Bu tempo 80+ temposu 📈","YDS bunu duyunca biraz titredi 😎"],
+ perfect:["Full doğru?! You're doing amazing, sweetie! ✨","Hepsi doğru. Ben de şaşırdım, sen şaşırma 😌","Good job, Kylie! Tek hata yok 👏"],
+ goal:["Bugünkü hedef tamam! You're doing amazing, sweetie ✨","Günlük hedef ✔️ Go, Kylie, go! 🚀","Hedef tamam. Şimdi bir çay hak ettin ☕"],
+ streak:["{n} gündür bırakmadın! 🔥 Good job, Kylie!","{n} günlük seri! 🔥 You're doing amazing, sweetie!","Seri {n} gün oldu. Go, Kylie, go! 🚀"],
+ record:["Yeni rekor! 🏆 Go, Kylie, go!","Rekor kırıldı! You're doing amazing, sweetie ✨","Kendi rekorunu geçtin. Good job, Kylie! 👏"]};
+let lastCheer=0;
+function cheer(kind,n){const now=Date.now();if(now-lastCheer<12000)return;lastCheer=now;
+  const L=CHEERS[kind]||CHEERS.great,t=L[Math.floor(Math.random()*L.length)].replace("{n}",n||"");
+  document.querySelectorAll(".buddy").forEach(x=>x.remove());
+  const d=document.createElement("div");d.className="buddy";d.setAttribute("role","status");
+  d.innerHTML=`<div class="bubble">${t}</div><img src="avatar.png" alt="Kübra">`;document.body.appendChild(d);
+  const close=()=>{d.classList.add("out");setTimeout(()=>d.remove(),350)};d.onclick=close;setTimeout(close,5200)}
+function hiCard(){if(S.hideHi)return `<button class="hi-mini" id="hishow"><img src="avatar.png" alt="">Merhaba yazısını göster</button>`;
+  return `<div class="card hi"><img src="avatar.png" alt="Kübra'nın piksel çizim avatarı"><div><h3>Merhaba, ben Kübra 👋</h3>
+  <p>Bu uygulamayı YDS'ye hazırlanırken önce kendim için, Claude'un desteğiyle hazırladım. Kâr amacı gütmeyen, amatör ve hâlâ geliştirilen bir çalışma; arada hatalar çıkabilir, gördüğün bir hatayı bana yazarsan çok sevinirim.</p>
+  <p>Amacım basit: düzenli çalışmayı biraz daha kolay, biraz daha eğlenceli yapmak. Umarım sana da faydalı olur. Kolay gelsin! 💜</p>
+  <p class="small mut" style="margin:.4em 0 0">Hedefine ulaştığında ya da seri yaptığında ben de bir köşeden çıkıp seni tebrik edeceğim. 😉</p>
+  <button class="back" id="hihide" style="margin-top:4px">Kapat</button></div></div>`}
+function bindHi(){const h=document.getElementById("hihide");if(h)h.onclick=()=>{S.hideHi=1;save();route()};const s=document.getElementById("hishow");if(s)s.onclick=()=>{S.hideHi=0;save();route()}}
+
 /* ===================== ROUTER ===================== */
 function route(){
   GID++;clearInterval(timer);clearInterval(qt);clearInterval(cdT);tip.hidden=true;document.onkeydown=null;document.querySelectorAll(".sheet,.spark,.confetti").forEach(x=>x.remove());
