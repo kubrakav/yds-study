@@ -193,7 +193,556 @@ dominant|adj|baskın, hâkim|English has become the dominant language of science
 enormous|adj|muazzam, devasa|The project required an enormous amount of money.|Proje muazzam miktarda para gerektirdi.|huge, immense, vast|tiny, small|enormously (adv)
 explicit|adj|açık, net|The law makes explicit reference to online harassment.|Yasa çevrim içi tacize açıkça atıfta bulunuyor.|clear, direct, unambiguous|implicit, vague|explicitly (adv)
 feasible|adj|uygulanabilir|Engineers say the plan is technically feasible but expensive.|Mühendisler planın teknik olarak uygulanabilir ama pahalı olduğunu söylüyor.|possible, practicable, viable|impossible, impractical|feasibility (n)
-consistently|adv|tutarlı biçimde, sürekli|The school has consistently achieved excellent results.|Okul sürekli olarak mükemmel sonuçlar elde etti.|constantly, regularly, steadily|inconsistently, irregularly|consistent (adj), consistency (n)`,
+consistently|adv|tutarlı biçimde, sürekli|The school has consistently achieved excellent results.|Okul sürekli olarak mükemmel sonuçlar elde etti.|constantly, regularly, steadily|inconsistently, irregularly|consistent (adj), consistency (n)
+11
+effect|n|sonuç, etki|The new law had an immediate effect on air quality in the city.|Yeni yasanın şehirdeki hava kalitesi üzerinde anında bir etkisi oldu.|result, impact, consequence|cause|
+sever|v|kopartmak, ilişkiyi kesmek|The storm severed the only road connecting the village to the town.|Fırtına köyü kasabaya bağlayan tek yolu kesti.|cut off, break off|join, connect|
+severe|adj|şiddetli, ağır|The region suffered severe flooding after days of heavy rain.|Bölge günlerce süren şiddetli yağmurun ardından ağır sel felaketi yaşadı.|serious, harsh, intense|mild, slight|
+affect|v|etkilemek|Lack of sleep can affect your ability to make decisions.|Uykusuzluk karar verme yeteneğini etkileyebilir.|influence, alter||
+revolution|n|devrim|The invention of the printing press started a revolution in education.|Matbaanın icadı eğitimde bir devrim başlattı.|upheaval, transformation||
+influence|n|etki, nüfuz|Parents have a strong influence on their children's eating habits.|Ebeveynlerin çocuklarının beslenme alışkanlıkları üzerinde güçlü bir etkisi vardır.|effect, impact, sway||
+involve|v|içermek, kapsamak; dahil etmek|The project involves collecting data from over two hundred schools.|Proje iki yüzden fazla okuldan veri toplamayı kapsıyor.|include, entail, require|exclude|
+decade|n|on yıl|Life expectancy has risen by almost five years over the past decade.|Yaşam süresi son on yılda neredeyse beş yıl arttı.|ten years||
+establish|v|kurmak; ortaya koymak, kanıtlamak|The university was established in 1883 by a group of doctors.|Üniversite 1883'te bir grup doktor tarafından kuruldu.|found, set up; prove|abolish|
+measure|n|önlem, tedbir; ölçü|The government introduced new measures to reduce traffic accidents.|Hükümet trafik kazalarını azaltmak için yeni önlemler aldı.|step, action; gauge||
+12
+goods|n|mallar, ürünler|The port handles millions of tonnes of goods every year.|Liman her yıl milyonlarca ton mal taşıyor.|products, merchandise||
+common|adj|yaygın; ortak|Back pain is one of the most common reasons for visiting a doctor.|Bel ağrısı doktora gitmenin en yaygın nedenlerinden biridir.|widespread, usual; shared|rare|
+achieve|v|başarmak, elde etmek|The team achieved its goal two months ahead of schedule.|Ekip hedefine plandan iki ay önce ulaştı.|accomplish, attain|fail|
+species|n|tür (canlı)|Scientists have identified more than forty new species of insects in the forest.|Bilim insanları ormanda kırktan fazla yeni böcek türü tespit etti.|kind, type||
+deal|n|anlaşma; miktar (a great deal)|Learning a language requires a great deal of patience.|Bir dil öğrenmek çok fazla sabır gerektirir.|agreement, arrangement||
+means|n|araç, yol, yöntem|For many families, the bicycle is the cheapest means of transport.|Pek çok aile için bisiklet en ucuz ulaşım aracıdır.|method, way, medium||
+prevent|v|önlemek, engel olmak|Washing your hands regularly can prevent many infections.|Ellerini düzenli yıkamak pek çok enfeksiyonu önleyebilir.|stop, hinder, avert|allow|
+consume|v|tüketmek|Older buildings consume far more energy than modern ones.|Eski binalar modern binalardan çok daha fazla enerji tüketir.|use up, eat, devour|produce|
+ancient|adj|antik, çok eski|Ancient Egyptians used honey to treat wounds.|Antik Mısırlılar yaraları tedavi etmek için bal kullanırdı.|old, archaic|modern|
+likely|adj|muhtemel|Prices are likely to rise again next year.|Fiyatların gelecek yıl yeniden artması muhtemel.|probable, possible|unlikely|
+13
+evidence|n|kanıt|There is growing evidence that exercise improves memory.|Egzersizin hafızayı geliştirdiğine dair artan kanıtlar var.|proof, sign, data||
+occur|v|meydana gelmek, olmak|Most accidents occur within a few kilometres of the driver's home.|Kazaların çoğu sürücünün evine birkaç kilometre mesafede meydana gelir.|happen, take place||
+advance|v|ilerlemek, gelişmek|Medicine has advanced rapidly since the discovery of antibiotics.|Tıp, antibiyotiklerin keşfinden bu yana hızla ilerledi.|progress, develop|retreat|
+decline|v|azalmak, düşmek; reddetmek|The number of bees has declined sharply in recent years.|Arı sayısı son yıllarda keskin biçimde azaldı.|decrease, fall; refuse|rise, accept|
+domestic|adj|yerli, iç; evcil, ev ile ilgili|Domestic flights were cancelled because of the snowstorm.|Kar fırtınası nedeniyle iç hat uçuşları iptal edildi.|national, internal; household|foreign|
+manufacture|v|üretmek, imal etmek|The factory manufactures parts for electric cars.|Fabrika elektrikli otomobiller için parça üretiyor.|produce, make||
+temperate|adj|ılıman (iklim); ölçülü|Apples grow best in temperate climates.|Elmalar en iyi ılıman iklimlerde yetişir.|mild, moderate|extreme|
+compare|v|karşılaştırmak|Researchers compared the results of the two groups.|Araştırmacılar iki grubun sonuçlarını karşılaştırdı.|contrast, weigh||
+impact|n|etki|Tourism has a huge impact on the island's economy.|Turizmin adanın ekonomisi üzerinde büyük bir etkisi var.|effect, influence||
+commerce|n|ticaret|The city became a centre of commerce in the Middle Ages.|Şehir Orta Çağ'da bir ticaret merkezi hâline geldi.|trade, business||
+14
+threat|n|tehdit|Plastic pollution is a serious threat to marine life.|Plastik kirliliği deniz yaşamı için ciddi bir tehdittir.|danger, menace, risk|safety|
+accept|v|kabul etmek|The committee accepted the proposal without any changes.|Kurul öneriyi hiçbir değişiklik yapmadan kabul etti.|admit, approve|reject|
+essential|adj|gerekli, temel|Clean water is essential for good health.|Temiz su sağlıklı olmak için şarttır.|vital, crucial, necessary|unnecessary|
+maintain|v|sürdürmek; korumak; ileri sürmek|It is difficult to maintain a healthy diet when you are busy.|Yoğunken sağlıklı beslenmeyi sürdürmek zordur.|keep, preserve; claim|neglect|
+object|v|itiraz etmek (object to)|Local residents objected to the new airport.|Yerel halk yeni havalimanına itiraz etti.|oppose, protest|agree|
+significant|adj|önemli, kayda değer|The study found a significant link between stress and heart disease.|Çalışma stres ile kalp hastalığı arasında önemli bir bağlantı buldu.|important, considerable|minor|
+adopt|v|benimsemek, uygulamaya koymak; evlat edinmek|Many schools have adopted new teaching methods.|Pek çok okul yeni öğretim yöntemleri benimsedi.|embrace, take on|abandon|
+attempt|n|girişim, deneme|Their first attempt to climb the mountain failed.|Dağa tırmanmaya yönelik ilk girişimleri başarısız oldu.|effort, try||
+determine|v|belirlemek; karar vermek|Genes partly determine how tall a person will be.|Genler bir kişinin ne kadar uzun olacağını kısmen belirler.|decide, establish, find out||
+relative|adj|göreceli; ilgili|The relative cost of food has fallen over the last century.|Gıdanın göreceli maliyeti son yüzyılda düştü.|comparative; related|absolute|
+15
+ability|n|yetenek, beceri|Some birds have the ability to recognise human faces.|Bazı kuşlar insan yüzlerini tanıma yeteneğine sahiptir.|capacity, skill|inability|
+attitude|n|tutum, yaklaşım|Public attitudes towards recycling have changed a lot.|Halkın geri dönüşüme karşı tutumu çok değişti.|approach, stance, view||
+available|adj|mevcut, elde edilebilir|The report is available online in three languages.|Rapor çevrim içi olarak üç dilde mevcut.|accessible, obtainable|unavailable|
+quality|n|nitelik, kalite; özellik|The quality of the water in the lake has improved.|Göldeki suyun kalitesi iyileşti.|standard; trait||
+extremely|adv|son derece|The operation was extremely difficult but successful.|Ameliyat son derece zordu ama başarılı oldu.|highly, exceedingly|slightly|
+allow|v|izin vermek, olanak tanımak|The new software allows users to work offline.|Yeni yazılım kullanıcıların çevrim dışı çalışmasına olanak tanıyor.|permit, enable|forbid|
+contain|v|içermek; kontrol altına almak|Many soft drinks contain large amounts of sugar.|Pek çok gazlı içecek büyük miktarda şeker içerir.|include, hold; restrain||
+feature|n|özellik|One feature of the new phone is its long battery life.|Yeni telefonun bir özelliği uzun pil ömrüdür.|characteristic, trait, aspect||
+infer|v|çıkarım yapmak, sonuç çıkarmak|From the data, we can infer that the disease spreads mainly in winter.|Verilerden hastalığın esas olarak kışın yayıldığı sonucunu çıkarabiliriz.|deduce, conclude||
+assume|v|varsaymak; (görev) üstlenmek|Many people assume that natural products are always safe.|Pek çok kişi doğal ürünlerin her zaman güvenli olduğunu varsayar.|suppose, presume; take on||
+16
+damage|v|zarar vermek|The earthquake damaged hundreds of buildings.|Deprem yüzlerce binaya zarar verdi.|harm, hurt, impair|repair|
+impose|v|(vergi, kural) dayatmak, koymak|The government imposed a tax on plastic bags.|Hükümet plastik poşetlere vergi koydu.|enforce, levy|lift|
+necessary|adj|gerekli|It may be necessary to repeat the test.|Testin tekrarlanması gerekebilir.|required, essential|unnecessary|
+acquire|v|edinmek, kazanmak|Children acquire language remarkably quickly.|Çocuklar dili dikkat çekici bir hızla edinir.|gain, obtain, get|lose|
+adequate|adj|yeterli|Many schools still lack adequate heating.|Pek çok okulda hâlâ yeterli ısıtma yok.|sufficient, enough|inadequate|
+explore|v|keşfetmek, araştırmak|The documentary explores the lives of deep-sea creatures.|Belgesel derin deniz canlılarının yaşamını inceliyor.|investigate, examine||
+ignore|v|görmezden gelmek|Drivers often ignore speed limits on empty roads.|Sürücüler boş yollarda hız sınırlarını sık sık görmezden gelir.|neglect, overlook, disregard|notice|
+challenge|v|meydan okumak; sorgulamak|The new findings challenge earlier theories about dinosaurs.|Yeni bulgular dinozorlarla ilgili önceki teorileri sorguluyor.|question, dispute|accept|
+collapse|v|çökmek, yıkılmak|The old bridge collapsed during the storm.|Eski köprü fırtına sırasında çöktü.|fall down, break down||
+conflict|n|çatışma, anlaşmazlık|The conflict between the two countries lasted for decades.|İki ülke arasındaki çatışma onlarca yıl sürdü.|clash, dispute, struggle|agreement|
+17
+diversity|n|çeşitlilik|Coral reefs are known for their remarkable diversity of life.|Mercan resifleri olağanüstü canlı çeşitliliğiyle bilinir.|variety, range|uniformity|
+ensure|v|sağlamak, garantiye almak|Engineers must ensure that the building can withstand earthquakes.|Mühendisler binanın depremlere dayanabileceğinden emin olmalı.|guarantee, make sure||
+innovation|n|yenilik|Innovation is the key to economic growth.|Yenilik ekonomik büyümenin anahtarıdır.|novelty, invention|tradition|
+adverse|adj|olumsuz, ters|The drug has few adverse effects.|İlacın çok az olumsuz etkisi var.|negative, harmful|favourable|
+detect|v|saptamak, fark etmek|The new scanner can detect tumours at an early stage.|Yeni tarayıcı tümörleri erken aşamada saptayabiliyor.|discover, notice, spot|miss|
+inspire|v|ilham vermek|Her success inspired many young women to study science.|Başarısı pek çok genç kadına bilim okuması için ilham verdi.|motivate, encourage|discourage|
+recession|n|durgunluk (ekonomik)|Unemployment rose sharply during the recession.|Durgunluk sırasında işsizlik keskin biçimde arttı.|slump, downturn|boom|
+access|n|erişim|Millions of people still lack access to the internet.|Milyonlarca insan hâlâ internete erişimden yoksun.|entry, admission||
+consequence|n|sonuç|Climate change has serious consequences for agriculture.|İklim değişikliğinin tarım için ciddi sonuçları var.|result, outcome, effect|cause|
+efficiency|n|verimlilik|LED lights have greatly improved energy efficiency.|LED lambalar enerji verimliliğini büyük ölçüde artırdı.|effectiveness, productivity|inefficiency|
+18
+emphasize|v|vurgulamak|The teacher emphasized the importance of regular practice.|Öğretmen düzenli pratiğin önemini vurguladı.|stress, highlight|play down|
+exact|adj|tam, kesin|The exact cause of the fire is still unknown.|Yangının kesin nedeni hâlâ bilinmiyor.|precise, accurate|approximate|
+interact|v|etkileşmek|Children learn best when they interact with others.|Çocuklar başkalarıyla etkileşime girdiklerinde en iyi öğrenir.|communicate, interrelate||
+prosper|v|zenginleşmek, gelişmek|The town prospered after the railway was built.|Kasaba demiryolu yapıldıktan sonra zenginleşti.|thrive, flourish|decline|
+relatively|adv|nispeten, görece|The disease is relatively rare in young people.|Hastalık gençlerde nispeten nadirdir.|comparatively, fairly||
+considerable|adj|hatırı sayılır, büyük|The project required a considerable amount of money.|Proje hatırı sayılır miktarda para gerektirdi.|substantial, significant|negligible|
+cultivate|v|(toprak) işlemek, yetiştirmek; geliştirmek|Farmers in the region cultivate rice and tea.|Bölgedeki çiftçiler pirinç ve çay yetiştiriyor.|grow, farm; develop||
+definite|adj|kesin, belirli|There is no definite answer to this question yet.|Bu sorunun henüz kesin bir cevabı yok.|certain, clear|vague|
+absolute|adj|mutlak, tam|The new rules require absolute silence in the library.|Yeni kurallar kütüphanede mutlak sessizlik gerektiriyor.|complete, total|relative|
+accurate|adj|doğru, kesin|Weather forecasts have become much more accurate.|Hava tahminleri çok daha doğru hâle geldi.|precise, exact, correct|inaccurate|
+19
+entire|adj|bütün|The fire destroyed the entire forest.|Yangın bütün ormanı yok etti.|whole, complete|partial|
+corporate|adj|kurumsal, şirketle ilgili|Corporate taxes were reduced to attract foreign investors.|Yabancı yatırımcıları çekmek için kurumlar vergisi düşürüldü.|business, organisational||
+desert|v|terk etmek|Many villagers deserted their homes after the drought.|Pek çok köylü kuraklıktan sonra evlerini terk etti.|abandon, leave|stay|
+eventual|adj|nihai, sonunda gerçekleşen|The eventual cost of the project was twice the estimate.|Projenin nihai maliyeti tahminin iki katıydı.|final, ultimate|initial|
+extinct|adj|nesli tükenmiş|The dodo became extinct in the seventeenth century.|Dodo kuşunun nesli on yedinci yüzyılda tükendi.|vanished, died out|living|
+impress|v|etkilemek, hayran bırakmak|The candidate impressed the panel with her knowledge.|Aday bilgisiyle kurulu etkiledi.|amaze, strike||
+overcome|v|üstesinden gelmek|She overcame many difficulties to finish her degree.|Diplomasını bitirmek için pek çok zorluğun üstesinden geldi.|defeat, conquer, surmount|give in|
+prejudice|n|önyargı|Education can help reduce prejudice against minorities.|Eğitim azınlıklara yönelik önyargıyı azaltmaya yardımcı olabilir.|bias, discrimination|fairness|
+appreciate|v|takdir etmek; değeri artmak|Visitors appreciate the quiet atmosphere of the museum.|Ziyaretçiler müzenin sakin atmosferini takdir ediyor.|value, recognise|depreciate|
+demonstrate|v|göstermek, kanıtlamak|The experiment demonstrates how plants respond to light.|Deney bitkilerin ışığa nasıl tepki verdiğini gösteriyor.|show, prove, illustrate||
+20
+disaster|n|felaket|The oil spill was an environmental disaster.|Petrol sızıntısı bir çevre felaketiydi.|catastrophe, calamity||
+dominate|v|hâkim olmak|A few large companies dominate the market.|Birkaç büyük şirket piyasaya hâkim.|control, rule, prevail||
+investment|n|yatırım|The country needs more investment in public transport.|Ülkenin toplu taşımaya daha fazla yatırıma ihtiyacı var.|funding, capital||
+option|n|seçenek|Working from home is now an option for many employees.|Evden çalışmak artık pek çok çalışan için bir seçenek.|choice, alternative||
+unique|adj|eşsiz, benzersiz|Each fingerprint is unique.|Her parmak izi eşsizdir.|distinctive, unmatched|common|
+convince|v|ikna etmek|It was hard to convince people to change their habits.|İnsanları alışkanlıklarını değiştirmeye ikna etmek zordu.|persuade|dissuade|
+discriminate|v|ayrımcılık yapmak; ayırt etmek|It is illegal to discriminate against employees because of their age.|Çalışanlara yaşları nedeniyle ayrımcılık yapmak yasa dışıdır.|segregate; distinguish||
+hardly|adv|neredeyse hiç|There is hardly any water left in the reservoir.|Barajda neredeyse hiç su kalmadı.|barely, scarcely||
+interpret|v|yorumlamak|Scientists interpret the data in different ways.|Bilim insanları verileri farklı biçimlerde yorumluyor.|explain, construe||
+invariably|adv|her zaman, değişmez biçimde|The first attempt invariably fails.|İlk deneme her zaman başarısız olur.|always, consistently|rarely|
+21
+investigate|v|araştırmak, soruşturmak|Police are investigating the cause of the accident.|Polis kazanın nedenini araştırıyor.|examine, probe, explore||
+legislate|v|yasa çıkarmak|Parliament legislated to protect endangered animals.|Meclis nesli tehlikedeki hayvanları korumak için yasa çıkardı.|enact, pass laws||
+priority|n|öncelik|Patient safety is the hospital's top priority.|Hasta güvenliği hastanenin birinci önceliğidir.|precedence, preference||
+acquisition|n|edinme, satın alma|Language acquisition begins long before a child speaks.|Dil edinimi çocuk konuşmadan çok önce başlar.|gain, purchase|loss|
+cognitive|adj|bilişsel|Regular reading may slow cognitive decline in old age.|Düzenli okuma yaşlılıkta bilişsel gerilemeyi yavaşlatabilir.|mental, intellectual||
+debate|v|tartışmak|Politicians debated the new budget for hours.|Politikacılar yeni bütçeyi saatlerce tartıştı.|discuss, argue||
+deception|n|aldatma, hile|The scam relied on clever deception.|Dolandırıcılık ustaca bir aldatmacaya dayanıyordu.|deceit, trickery|honesty|
+excessive|adj|aşırı|Excessive use of antibiotics has led to resistant bacteria.|Antibiyotiklerin aşırı kullanımı dirençli bakterilere yol açtı.|extreme, undue|moderate|
+medieval|adj|ortaçağa ait|The town still has its medieval walls.|Kasabanın ortaçağdan kalma surları hâlâ duruyor.|of the Middle Ages||
+regulate|v|düzenlemek, denetlemek|The agency regulates the safety of medicines.|Kurum ilaçların güvenliğini denetliyor.|control, govern||
+22
+ultimate|adj|nihai, en son; en üst|The ultimate aim of the project is to end hunger.|Projenin nihai amacı açlığı sona erdirmek.|final, eventual; supreme|initial|
+admit|v|itiraf etmek, kabul etmek|The company admitted that its product was faulty.|Şirket ürününün kusurlu olduğunu kabul etti.|confess, acknowledge|deny|
+distribution|n|dağıtım, dağılım|The distribution of wealth has become more unequal.|Servet dağılımı daha eşitsiz hâle geldi.|allocation, spread|concentration|
+emergence|n|ortaya çıkış|The emergence of smartphones changed how we read the news.|Akıllı telefonların ortaya çıkışı haberleri okuma biçimimizi değiştirdi.|appearance, rise|disappearance|
+equip|v|donatmak|All classrooms are equipped with projectors.|Bütün sınıflar projektörle donatılmış.|supply, furnish, provide||
+intervention|n|müdahale|Early intervention can prevent serious learning problems.|Erken müdahale ciddi öğrenme sorunlarını önleyebilir.|interference, involvement||
+justice|n|adalet|The victims' families are still waiting for justice.|Kurbanların aileleri hâlâ adalet bekliyor.|fairness, equity|injustice|
+moral|adj|ahlaki|Doctors sometimes face difficult moral choices.|Doktorlar bazen zor ahlaki seçimlerle karşılaşır.|ethical|immoral|
+potent|adj|güçlü, etkili|The new drug is far more potent than the old one.|Yeni ilaç eskisinden çok daha güçlü.|powerful, strong|weak|
+prospect|n|olasılık, beklenti|The prospect of a cure has given patients new hope.|Tedavi olasılığı hastalara yeni bir umut verdi.|possibility, outlook||
+23
+scholar|n|akademisyen, bilgin|Scholars still disagree about the meaning of the text.|Akademisyenler metnin anlamı konusunda hâlâ anlaşamıyor.|academic, researcher||
+stability|n|istikrar, denge|Political stability is necessary for economic growth.|Ekonomik büyüme için siyasi istikrar gereklidir.|steadiness, balance|instability|
+substantial|adj|önemli miktarda, büyük|The town received a substantial grant to repair the bridge.|Kasaba köprüyü onarmak için önemli miktarda hibe aldı.|considerable, large|small|
+wealth|n|zenginlik, servet|The country's wealth comes mainly from oil.|Ülkenin zenginliği esas olarak petrolden geliyor.|riches, fortune|poverty|
+considerate|adj|düşünceli, saygılı|Be considerate and keep your voice down in the library.|Düşünceli ol ve kütüphanede sesini alçak tut.|thoughtful, kind|selfish|
+erupt|v|(yanardağ) patlamak; aniden başlamak|The volcano erupted without warning.|Yanardağ uyarı vermeden patladı.|explode, break out||
+fertile|adj|verimli, doğurgan|The river valley has very fertile soil.|Nehir vadisinin toprağı çok verimli.|fruitful, productive|barren|
+foundation|n|temel; vakıf|Good nutrition is the foundation of good health.|İyi beslenme sağlığın temelidir.|basis, base||
+initial|adj|ilk, başlangıçtaki|Initial results suggest the treatment is effective.|İlk sonuçlar tedavinin etkili olduğunu gösteriyor.|first, early|final|
+portray|v|tasvir etmek|The film portrays life in a small fishing village.|Film küçük bir balıkçı köyündeki hayatı anlatıyor.|depict, represent, describe||
+24
+prosperity|n|refah, bolluk|Trade brought prosperity to the region.|Ticaret bölgeye refah getirdi.|wealth, affluence|poverty|
+relief|n|rahatlama; yardım|The rain brought relief after weeks of drought.|Yağmur haftalarca süren kuraklıktan sonra rahatlama getirdi.|comfort, ease; aid|distress|
+resistance|n|direnç, direniş|Bacteria can develop resistance to antibiotics.|Bakteriler antibiyotiklere direnç geliştirebilir.|opposition, defiance|compliance|
+revenue|n|gelir|Tourism is the island's main source of revenue.|Turizm adanın başlıca gelir kaynağıdır.|income, earnings|expenditure|
+rival|n|rakip|The two companies have been rivals for decades.|İki şirket onlarca yıldır rakip.|competitor, opponent|ally|
+shift|v|değişmek, kaymak|There has been a shift towards online shopping.|Çevrim içi alışverişe doğru bir kayma oldu.|change, move, switch||
+treaty|n|antlaşma|The two countries signed a peace treaty in 1921.|İki ülke 1921'de bir barış antlaşması imzaladı.|agreement, pact||
+yield|n|verim, ürün; getiri|New farming methods have increased crop yields.|Yeni tarım yöntemleri ürün verimini artırdı.|output, harvest, return||
+alliance|n|ittifak|The two parties formed an alliance before the election.|İki parti seçimden önce bir ittifak kurdu.|coalition, union||
+apparent|adj|belli, açık; görünürdeki|It soon became apparent that the plan would not work.|Planın işe yaramayacağı kısa sürede belli oldu.|obvious, evident; seeming|hidden|
+25
+appeal|v|çekici gelmek; başvurmak, rica etmek|Life in the countryside appeals to many city dwellers.|Kırsal yaşam pek çok şehirliye çekici geliyor.|attract; request||
+assert|v|iddia etmek, ileri sürmek|The author asserts that social media harms concentration.|Yazar sosyal medyanın odaklanmaya zarar verdiğini ileri sürüyor.|claim, state, maintain|deny|
+contaminate|v|kirletmek, bulaştırmak|Chemicals from the factory contaminated the river.|Fabrikadan gelen kimyasallar nehri kirletti.|pollute, infect|purify|
+deserve|v|hak etmek|Nurses deserve better pay for their hard work.|Hemşireler sıkı çalışmaları için daha iyi ücreti hak ediyor.|merit, earn||
+destruction|n|yıkım|The war caused widespread destruction.|Savaş geniş çaplı yıkıma neden oldu.|devastation, ruin|construction|
+discrimination|n|ayrımcılık; ayırt etme|The law protects workers from discrimination.|Yasa çalışanları ayrımcılığa karşı koruyor.|bias, prejudice|equality|
+distinctive|adj|ayırt edici, kendine özgü|The bird has a distinctive red tail.|Kuşun kendine özgü kırmızı bir kuyruğu var.|characteristic, unique|ordinary|
+distinguish|v|ayırt etmek|Young children cannot always distinguish fact from fiction.|Küçük çocuklar gerçeği kurgudan her zaman ayırt edemez.|differentiate, tell apart|confuse|
+exceed|v|aşmak|Demand for the vaccine exceeded supply.|Aşıya olan talep arzı aştı.|surpass, go beyond||
+gradual|adj|kademeli, aşamalı|There has been a gradual increase in temperatures.|Sıcaklıklarda kademeli bir artış oldu.|steady, progressive|sudden|
+26
+intervene|v|müdahale etmek|The central bank intervened to stop the currency from falling.|Merkez bankası para biriminin düşüşünü durdurmak için müdahale etti.|interfere, step in||
+layer|n|katman|A thin layer of ice covered the lake.|İnce bir buz tabakası gölü kapladı.|stratum, level||
+outcome|n|sonuç|The outcome of the election surprised everyone.|Seçimin sonucu herkesi şaşırttı.|result, consequence||
+sophisticated|adj|gelişmiş, karmaşık; sofistike|Modern cars use sophisticated computer systems.|Modern arabalar gelişmiş bilgisayar sistemleri kullanıyor.|advanced, complex|simple|
+task|n|görev, iş|Robots can now perform many dangerous tasks.|Robotlar artık pek çok tehlikeli görevi yerine getirebiliyor.|duty, job, assignment||
+alert|adj|uyanık, dikkatli|Drivers must stay alert on long journeys.|Sürücüler uzun yolculuklarda uyanık kalmalı.|watchful, attentive|unaware|
+anticipate|v|öngörmek, beklemek|Few experts anticipated the sudden fall in prices.|Çok az uzman fiyatlardaki ani düşüşü öngördü.|expect, foresee||
+appropriate|adj|uygun|Wear appropriate clothing for the cold weather.|Soğuk hava için uygun giysiler giy.|suitable, proper|inappropriate|
+assess|v|değerlendirmek|Teachers assess students' progress every month.|Öğretmenler öğrencilerin ilerlemesini her ay değerlendiriyor.|evaluate, judge||
+beneficial|adj|faydalı|Moderate exercise is beneficial at any age.|Ölçülü egzersiz her yaşta faydalıdır.|useful, advantageous|harmful|
+27
+confirm|v|doğrulamak|Tests confirmed that the water was safe to drink.|Testler suyun içilmesinin güvenli olduğunu doğruladı.|verify, prove|deny|
+conserve|v|korumak, tasarruf etmek|We must conserve water during the summer months.|Yaz aylarında suyu tasarruflu kullanmalıyız.|preserve, save|waste|
+contemporary|adj|çağdaş, günümüze ait|The museum focuses on contemporary art.|Müze çağdaş sanata odaklanıyor.|modern, current|ancient|
+defeat|v|yenmek|The army was defeated after a long siege.|Ordu uzun bir kuşatmadan sonra yenildi.|beat, conquer|lose to|
+diminish|v|azalmak, azaltmak|The pain diminished after a few days.|Ağrı birkaç gün sonra azaldı.|decrease, reduce|increase|
+display|v|sergilemek, göstermek|The museum displays tools used by early humans.|Müze ilk insanların kullandığı aletleri sergiliyor.|show, exhibit|hide|
+encounter|v|karşılaşmak|Explorers encountered many dangers on the journey.|Kâşifler yolculukta pek çok tehlikeyle karşılaştı.|meet, face, come across|avoid|
+era|n|çağ, devir|The invention of the steam engine marked a new era.|Buhar makinesinin icadı yeni bir çağı başlattı.|age, period, epoch||
+eradicate|v|kökünü kazımak|Smallpox was eradicated in 1980.|Çiçek hastalığının kökü 1980'de kazındı.|eliminate, wipe out||
+massive|adj|çok büyük|A massive earthquake struck the region.|Bölgeyi çok büyük bir deprem vurdu.|huge, enormous|tiny|
+28
+pursuit|n|arayış, peşinde koşma; uğraş|The pursuit of happiness is a basic human right.|Mutluluk arayışı temel bir insan hakkıdır.|search, quest; activity||
+sustain|v|sürdürmek; (zarar) görmek|The village cannot sustain such a large population.|Köy bu kadar büyük bir nüfusu kaldıramaz.|maintain, keep up; suffer||
+trend|n|eğilim|There is a growing trend towards plant-based diets.|Bitki temelli beslenmeye doğru artan bir eğilim var.|tendency, pattern||
+urgent|adj|acil|The hospital is in urgent need of blood donors.|Hastanenin acilen kan bağışçısına ihtiyacı var.|pressing, critical||
+attach|v|eklemek, bağlamak|Please attach a copy of your passport to the form.|Lütfen forma pasaportunuzun bir kopyasını ekleyin.|fasten, connect|detach|
+devastate|v|harap etmek|The hurricane devastated the coastal towns.|Kasırga kıyı kasabalarını harap etti.|destroy, ruin||
+enterprise|n|girişim, işletme|Small enterprises create most new jobs.|Yeni işlerin çoğunu küçük işletmeler yaratıyor.|venture, business||
+firm|adj|sağlam, kararlı|There is no firm evidence that the drug works.|İlacın işe yaradığına dair sağlam bir kanıt yok.|solid, steady|weak|
+inadequate|adj|yetersiz|The hospital's equipment is inadequate.|Hastanenin ekipmanı yetersiz.|insufficient|adequate|
+merely|adv|sadece, yalnızca|The plan is merely a first step.|Plan yalnızca bir ilk adım.|only, simply||
+29
+nutrition|n|beslenme|Good nutrition is vital in early childhood.|Erken çocuklukta iyi beslenme hayati önem taşır.|nourishment, diet||
+obsess|v|takıntı haline getirmek|Some students obsess about their grades.|Bazı öğrenciler notlarını takıntı hâline getiriyor.|preoccupy, haunt||
+permanent|adj|kalıcı|The injury caused permanent damage to his hearing.|Yaralanma işitmesinde kalıcı hasara yol açtı.|lasting, enduring|temporary|
+prey|n|av|Owls hunt their prey at night.|Baykuşlar avlarını geceleri avlar.|victim, quarry|predator|
+rare|adj|nadir|The museum owns several rare manuscripts.|Müzenin birkaç nadir el yazması var.|scarce, uncommon|common|
+roughly|adv|yaklaşık olarak|Roughly half of the students passed the exam.|Öğrencilerin yaklaşık yarısı sınavı geçti.|approximately, about|exactly|
+stimulate|v|uyarmak, teşvik etmek|The government lowered taxes to stimulate the economy.|Hükümet ekonomiyi canlandırmak için vergileri düşürdü.|encourage, boost|discourage|
+undertake|v|üstlenmek, girişmek|The university undertook a major study of air pollution.|Üniversite hava kirliliği üzerine kapsamlı bir çalışma üstlendi.|take on, embark on||
+virtually|adv|neredeyse|Virtually every home now has a mobile phone.|Artık neredeyse her evde bir cep telefonu var.|almost, nearly||
+accessible|adj|erişilebilir|The museum is fully accessible to wheelchair users.|Müze tekerlekli sandalye kullananlar için tamamen erişilebilir.|reachable, available|inaccessible|
+30
+commit|v|(suç) işlemek; adamak|Most crimes are committed by a small number of people.|Suçların çoğu az sayıda kişi tarafından işleniyor.|perpetrate; devote||
+controversy|n|tartışma, anlaşmazlık|The new law caused a great deal of controversy.|Yeni yasa büyük tartışmalara yol açtı.|dispute, debate|agreement|
+expedition|n|keşif gezisi|The expedition reached the South Pole in 1911.|Keşif ekibi 1911'de Güney Kutbu'na ulaştı.|journey, voyage||
+fairly|adv|oldukça; adilce|The instructions are fairly easy to follow.|Talimatları takip etmek oldukça kolay.|quite, rather; justly||
+grant|n|hibe, ödenek|She received a grant to continue her research.|Araştırmasını sürdürmek için bir hibe aldı.|subsidy, award||
+incredible|adj|inanılmaz|The view from the summit was incredible.|Zirveden manzara inanılmazdı.|unbelievable, amazing|ordinary|
+indispensable|adj|vazgeçilmez|The internet has become indispensable for students.|İnternet öğrenciler için vazgeçilmez hâle geldi.|essential, vital|unnecessary|
+invasion|n|istila|The invasion lasted only three days.|İstila yalnızca üç gün sürdü.|occupation, attack|withdrawal|
+irrigate|v|sulamak|Farmers irrigate their fields with water from the river.|Çiftçiler tarlalarını nehirden aldıkları suyla suluyor.|water||
+overlook|v|gözden kaçırmak; tepeden bakmak|The report overlooked several important factors.|Rapor birkaç önemli etkeni gözden kaçırdı.|miss, ignore|notice|
+31
+prove|v|kanıtlamak; …olduğu ortaya çıkmak|The theory was later proved wrong.|Teorinin daha sonra yanlış olduğu kanıtlandı.|demonstrate, show|disprove|
+raise|v|yükseltmek; yetiştirmek; (soru) gündeme getirmek|The campaign raised money for the local hospital.|Kampanya yerel hastane için para topladı.|lift, increase; bring up|lower|
+render|v|…hale getirmek|The flood rendered the road unusable.|Sel yolu kullanılamaz hâle getirdi.|make, cause to be||
+tiny|adj|minicik|Tiny particles of plastic have been found in drinking water.|İçme suyunda minicik plastik parçacıkları bulundu.|minute, small|huge|
+artificial|adj|yapay|The drink contains no artificial colours.|İçecek hiçbir yapay renklendirici içermiyor.|synthetic, man-made|natural|
+assign|v|görevlendirmek, atamak|Each student was assigned a partner for the project.|Her öğrenciye proje için bir eş atandı.|allocate, appoint||
+complexity|n|karmaşıklık|The complexity of the problem surprised the engineers.|Sorunun karmaşıklığı mühendisleri şaşırttı.|intricacy, complication|simplicity|
+contradict|v|çelişmek|The new evidence contradicts the witness's story.|Yeni kanıt tanığın anlattıklarıyla çelişiyor.|conflict with, deny|confirm|
+corrupt|adj|yozlaşmış, rüşvetçi|The corrupt official was sent to prison.|Rüşvetçi yetkili hapse gönderildi.|dishonest, crooked|honest|
+decree|v|kararname ile emretmek|The king decreed that the festival would be held every year.|Kral festivalin her yıl yapılmasını buyurdu.|order, rule||
+32
+delusion|n|yanılsama, hayal|He is under the delusion that he will never get ill.|Hiç hastalanmayacağı yanılgısı içinde.|illusion, misconception|reality|
+depict|v|tasvir etmek|The painting depicts a busy market in Istanbul.|Tablo İstanbul'da kalabalık bir pazarı tasvir ediyor.|portray, describe||
+differentiate|v|ayırt etmek|Customers find it hard to differentiate between the two brands.|Müşteriler iki markayı birbirinden ayırt etmekte zorlanıyor.|distinguish||
+disrupt|v|bozmak, aksatmak|The strike disrupted train services across the country.|Grev ülke genelinde tren seferlerini aksattı.|disturb, interrupt||
+elevate|v|yükseltmek|Stress can elevate blood pressure.|Stres kan basıncını yükseltebilir.|raise, lift|lower|
+evolve|v|evrimleşmek, gelişmek|Birds evolved from small dinosaurs.|Kuşlar küçük dinozorlardan evrimleşti.|develop, progress||
+exploitation|n|sömürü; yararlanma|The book describes the exploitation of child workers.|Kitap çocuk işçilerin sömürülmesini anlatıyor.|abuse; utilisation||
+familiar|adj|tanıdık, aşina|The song sounded familiar to everyone in the room.|Şarkı odadaki herkese tanıdık geldi.|well-known, acquainted|unfamiliar|
+famine|n|kıtlık, açlık|Millions died in the famine of the 1840s.|1840'lardaki kıtlıkta milyonlarca insan öldü.|starvation, hunger|plenty|
+fluctuate|v|dalgalanmak|Oil prices fluctuate from week to week.|Petrol fiyatları haftadan haftaya dalgalanıyor.|vary, rise and fall|stabilise|
+33
+foresee|v|önceden görmek|Nobody could foresee the success of the small company.|Küçük şirketin başarısını kimse öngöremezdi.|predict, anticipate||
+frustrate|v|engellemek; hayal kırıklığına uğratmak|Bad weather frustrated the rescue efforts.|Kötü hava kurtarma çalışmalarını engelledi.|thwart; disappoint||
+peak|n|zirve|Traffic reaches its peak at around six in the evening.|Trafik akşam saat altı civarında zirveye ulaşır.|summit, top, height|bottom|
+poison|n|zehir|Some mushrooms contain a deadly poison.|Bazı mantarlar ölümcül bir zehir içerir.|toxin|antidote|
+prevention|n|önleme|Prevention is better than cure.|Önlemek tedavi etmekten iyidir.|avoidance, deterrence||
+property|n|mülk; özellik|The house is the property of the city council.|Ev belediyenin mülküdür.|possession; quality, trait||
+requirement|n|gereklilik, şart|A university degree is a requirement for the job.|Üniversite diploması bu iş için bir şart.|need, condition||
+unprecedented|adj|eşi görülmemiş|The country faced an unprecedented economic crisis.|Ülke eşi görülmemiş bir ekonomik krizle karşı karşıya kaldı.|unparalleled, new|common|
+abandon|v|terk etmek, vazgeçmek|The crew had to abandon the sinking ship.|Mürettebat batan gemiyi terk etmek zorunda kaldı.|give up, desert|keep|
+absorb|v|emmek; özümsemek|Plants absorb carbon dioxide from the air.|Bitkiler havadan karbondioksit emer.|soak up, take in|emit|
+34
+adversely|adv|olumsuz yönde|Noise can adversely affect children's learning.|Gürültü çocukların öğrenmesini olumsuz etkileyebilir.|negatively|positively|
+assemble|v|toplamak, monte etmek|Workers assemble the cars by hand.|İşçiler arabaları elle monte ediyor.|gather, put together|dismantle|
+delay|v|ertelemek, geciktirmek|The flight was delayed because of fog.|Uçuş sis nedeniyle ertelendi.|postpone, put off|hasten|
+depart|v|ayrılmak|The train departs from platform four.|Tren dördüncü perondan kalkıyor.|leave|arrive|
+dispute|v|tartışmak, itiraz etmek|The two neighbours disputed the ownership of the land.|İki komşu arazinin mülkiyeti konusunda anlaşmazlığa düştü.|argue, contest|accept|
+drought|n|kuraklık|The drought destroyed most of the harvest.|Kuraklık hasadın çoğunu yok etti.|dry spell|flood|
+elaborate|adj|ayrıntılı, özenli|The guests were served an elaborate meal.|Konuklara özenle hazırlanmış bir yemek sunuldu.|detailed, complex|simple|
+endure|v|dayanmak, katlanmak|The explorers endured extreme cold for weeks.|Kâşifler haftalarca aşırı soğuğa dayandı.|tolerate, withstand||
+enlighten|v|aydınlatmak, bilgilendirmek|The lecture enlightened students about the history of the region.|Konferans öğrencileri bölgenin tarihi hakkında aydınlattı.|inform, educate|confuse|
+exaggerate|v|abartmak|Some advertisements exaggerate the benefits of their products.|Bazı reklamlar ürünlerinin faydalarını abartıyor.|overstate|understate|
+35
+expansion|n|genişleme|The rapid expansion of the city put pressure on its water supply.|Şehrin hızlı genişlemesi su kaynakları üzerinde baskı yarattı.|growth, enlargement|contraction|
+genuine|adj|gerçek, samimi|The museum confirmed that the painting is genuine.|Müze tablonun gerçek olduğunu doğruladı.|real, authentic|fake|
+hamper|v|engellemek|Heavy snow hampered efforts to reach the climbers.|Yoğun kar dağcılara ulaşma çabalarını engelledi.|hinder, obstruct|facilitate|
+insight|n|kavrayış, içgörü|The study offers new insight into how memory works.|Çalışma hafızanın nasıl işlediğine dair yeni bir kavrayış sunuyor.|understanding, perception||
+instinct|n|içgüdü|Birds find their way home by instinct.|Kuşlar evlerinin yolunu içgüdüyle bulur.|intuition, impulse||
+pose|v|(tehdit, soru) oluşturmak|Rising sea levels pose a threat to coastal cities.|Yükselen deniz seviyeleri kıyı şehirleri için bir tehdit oluşturuyor.|present, cause||
+profound|adj|derin, büyük|The discovery had a profound effect on medicine.|Keşfin tıp üzerinde derin bir etkisi oldu.|deep, intense|superficial|
+scope|n|kapsam|The scope of the study was limited to one city.|Çalışmanın kapsamı tek bir şehirle sınırlıydı.|range, extent||
+seek|v|aramak, peşinde olmak|Many refugees seek safety in neighbouring countries.|Pek çok mülteci komşu ülkelerde güvenlik arıyor.|look for, pursue||
+subtle|adj|ince, belli belirsiz|There are subtle differences between the two dialects.|İki lehçe arasında ince farklar var.|slight, delicate|obvious|
+36
+treasure|v|değer vermek|Many people treasure old family photographs.|Pek çok insan eski aile fotoğraflarına çok değer verir.|cherish, value||
+absence|n|yokluk, eksiklik|In the absence of rain, crops quickly die.|Yağmur yokluğunda ekinler çabucak ölür.|lack, non-existence|presence|
+accuracy|n|doğruluk, kesinlik|The accuracy of the test has been questioned.|Testin doğruluğu sorgulandı.|precision, exactness|inaccuracy|
+accuse|v|suçlamak|The company was accused of polluting the river.|Şirket nehri kirletmekle suçlandı.|blame, charge|defend|
+annual|adj|yıllık|The festival is an annual event.|Festival yıllık bir etkinliktir.|yearly||
+chief|adj|baş, ana|The chief cause of the accident was speed.|Kazanın başlıca nedeni hızdı.|main, principal|minor|
+compensation|n|tazminat; telafi|The victims received compensation from the airline.|Mağdurlar havayolu şirketinden tazminat aldı.|payment; amends||
+comprise|v|içermek, oluşmak|The committee comprises ten members.|Kurul on üyeden oluşuyor.|consist of, include||
+concrete|adj|somut|We need concrete evidence, not rumours.|Söylentilere değil somut kanıta ihtiyacımız var.|tangible, specific|abstract|
+conquer|v|fethetmek|The empire conquered much of the region.|İmparatorluk bölgenin büyük kısmını fethetti.|defeat, overcome|surrender|
+37
+consensus|n|fikir birliği|There is a broad consensus that action is needed.|Harekete geçilmesi gerektiği konusunda geniş bir fikir birliği var.|agreement, accord|disagreement|
+craft|n|zanaat|Weaving is a traditional craft in the region.|Dokumacılık bölgede geleneksel bir zanaattir.|skill, handicraft||
+curiosity|n|merak|Children are full of curiosity about the world.|Çocuklar dünyaya karşı merak doludur.|interest, inquisitiveness|indifference|
+defect|n|kusur|The cars were recalled because of a defect in the brakes.|Arabalar frenlerdeki bir kusur nedeniyle geri çağrıldı.|flaw, fault||
+disposal|n|elden çıkarma, atık giderme|The safe disposal of nuclear waste is a major problem.|Nükleer atıkların güvenli biçimde bertaraf edilmesi büyük bir sorundur.|removal, discarding||
+essence|n|öz, esas|The essence of good teaching is clear communication.|İyi öğretmenin özü açık iletişimdir.|core, heart||
+evaluate|v|değerlendirmek|Experts will evaluate the results of the trial.|Uzmanlar denemenin sonuçlarını değerlendirecek.|assess, appraise||
+exclusive|adj|özel, ayrıcalıklı|The magazine published an exclusive interview with the scientist.|Dergi bilim insanıyla özel bir röportaj yayımladı.|sole, restricted|inclusive|
+fatal|adj|ölümcül|The disease is fatal if it is not treated.|Hastalık tedavi edilmezse ölümcüldür.|deadly, lethal|harmless|
+innate|adj|doğuştan|Some researchers believe language ability is innate.|Bazı araştırmacılar dil yeteneğinin doğuştan olduğuna inanıyor.|inborn, inherent|acquired|
+38
+intense|adj|yoğun, şiddetli|The athletes trained in intense heat.|Sporcular yoğun sıcakta antrenman yaptı.|strong, extreme|mild|
+irrelevant|adj|ilgisiz, alakasız|His age is irrelevant to the job.|Yaşı işle ilgisiz.|unrelated|relevant|
+launch|v|başlatmak; fırlatmak|The company will launch its new product next month.|Şirket yeni ürününü gelecek ay piyasaya sürecek.|start, initiate|end|
+migration|n|göç|The migration of birds is affected by climate change.|Kuşların göçü iklim değişikliğinden etkileniyor.|movement, relocation||
+precaution|n|önlem|As a precaution, the school was closed for the day.|Önlem olarak okul o gün kapatıldı.|safeguard, measure||
+precise|adj|kesin, tam|The instrument gives precise measurements.|Alet kesin ölçümler veriyor.|exact, accurate|vague|
+promising|adj|umut verici|The early results of the treatment are promising.|Tedavinin ilk sonuçları umut verici.|encouraging, hopeful||
+recognition|n|tanınma, kabul|The scientist received international recognition for her work.|Bilim insanı çalışmasıyla uluslararası tanınırlık kazandı.|acknowledgement||
+reluctant|adj|isteksiz|Many people are reluctant to change their diet.|Pek çok insan beslenmesini değiştirmeye isteksiz.|unwilling, hesitant|eager|
+resent|v|içerlemek|Workers resent being told what to do without explanation.|Çalışanlar açıklama yapılmadan ne yapacaklarının söylenmesine içerliyor.|be bitter about||
+39
+severity|n|şiddet, ciddiyet|Doctors assessed the severity of the injury.|Doktorlar yaralanmanın ciddiyetini değerlendirdi.|seriousness, intensity|mildness|
+shortage|n|kıtlık, eksiklik|There is a shortage of teachers in rural areas.|Kırsal bölgelerde öğretmen eksikliği var.|lack, deficiency|surplus|
+sovereign|adj|egemen, bağımsız|Each member state remains a sovereign nation.|Her üye devlet egemen bir ulus olarak kalıyor.|independent, autonomous|dependent|
+spoil|v|bozmak, şımartmak|The rain spoiled our picnic.|Yağmur pikniğimizi bozdu.|ruin; pamper||
+startle|v|ürkütmek|The sudden noise startled the horses.|Ani gürültü atları ürküttü.|frighten, surprise|calm|
+strain|n|gerilim, baskı; (hastalık) suşu|The long working hours put a strain on his health.|Uzun çalışma saatleri sağlığına yük bindirdi.|pressure, stress; variety||
+temper|n|huy, öfke|He has a quick temper but calms down easily.|Çabuk öfkelenir ama kolayca sakinleşir.|mood, anger||
+tough|adj|zor; sert, dayanıklı|The government faces tough decisions about spending.|Hükümet harcamalar konusunda zor kararlarla karşı karşıya.|difficult; strong|easy|
+underestimate|v|hafife almak|Many people underestimate the time they spend online.|Pek çok insan internette geçirdiği zamanı hafife alıyor.|undervalue|overestimate|
+vulnerable|adj|savunmasız, korunmasız|Elderly people are more vulnerable to the flu.|Yaşlılar gribe karşı daha savunmasızdır.|exposed, susceptible|resistant|
+40
+wage|v|(savaş, kampanya) sürdürmek|The government waged a campaign against smoking.|Hükümet sigaraya karşı bir kampanya yürüttü.|carry on, conduct||
+weaken|v|zayıflatmak|The illness weakened her immune system.|Hastalık bağışıklık sistemini zayıflattı.|undermine, diminish|strengthen|
+altitude|n|yükseklik, rakım|Breathing becomes harder at high altitude.|Yüksek rakımda nefes almak zorlaşır.|height, elevation||
+anxious|adj|endişeli; hevesli|Many students feel anxious before exams.|Pek çok öğrenci sınavlardan önce endişeli hisseder.|worried; eager|calm|
+assessment|n|değerlendirme|The assessment showed that the bridge was unsafe.|Değerlendirme köprünün güvensiz olduğunu gösterdi.|evaluation, appraisal||
+asset|n|varlık, değerli şey|Her language skills are a great asset to the team.|Dil becerileri ekip için büyük bir varlık.|resource, advantage|liability|
+burden|n|yük|The new tax will place a heavy burden on small businesses.|Yeni vergi küçük işletmelere ağır bir yük getirecek.|load, weight||
+cease|v|sona ermek, durmak|The factory ceased production in 2015.|Fabrika 2015'te üretimi durdurdu.|stop, end|begin|
+considerably|adv|önemli ölçüde|Prices have risen considerably since last year.|Fiyatlar geçen yıldan bu yana önemli ölçüde arttı.|significantly, greatly|slightly|
+convert|v|dönüştürmek|The old factory was converted into apartments.|Eski fabrika dairelere dönüştürüldü.|transform, change||
+41
+although|conj|-e rağmen, -se de|Although the test was difficult, most students passed.|Sınav zor olsa da öğrencilerin çoğu geçti.|even though, though||
+whereas|conj|oysa, -iken|Some animals sleep in winter, whereas others migrate.|Bazı hayvanlar kışın uyurken diğerleri göç eder.|while||
+nevertheless|conj|yine de, buna rağmen|The plan was risky; nevertheless, the team decided to try it.|Plan riskliydi; yine de ekip denemeye karar verdi.|nonetheless, however, still||
+nonetheless|conj|yine de|The results were small but nonetheless important.|Sonuçlar küçüktü ama yine de önemliydi.|nevertheless, even so||
+however|conj|ancak, fakat; ne kadar … olursa olsun|The drug is effective; however, it has side effects.|İlaç etkili; ancak yan etkileri var.|but, yet, nevertheless||
+yet|conj|ama, yine de; henüz|The task was simple, yet nobody finished it on time.|Görev basitti, yine de kimse zamanında bitiremedi.|but, still||
+therefore|conj|bu nedenle|The road was closed; therefore, we took the train.|Yol kapalıydı; bu nedenle trene bindik.|thus, hence, consequently||
+thus|conj|böylece, bu yüzden|Prices fell, thus making the product more popular.|Fiyatlar düştü ve böylece ürün daha popüler oldu.|therefore, hence||
+hence|conj|bu nedenle, dolayısıyla|The material is light and strong, hence its use in aircraft.|Malzeme hafif ve güçlü; dolayısıyla uçaklarda kullanılıyor.|therefore, thus||
+consequently|conj|sonuç olarak|The factory closed and consequently many people lost their jobs.|Fabrika kapandı ve sonuç olarak birçok kişi işini kaybetti.|as a result, therefore||
+42
+accordingly|conj|buna göre, bu nedenle|Demand increased, and prices rose accordingly.|Talep arttı ve fiyatlar buna göre yükseldi.|correspondingly, therefore||
+moreover|conj|üstelik, ayrıca|The car is cheap; moreover, it uses very little fuel.|Araba ucuz; üstelik çok az yakıt tüketiyor.|furthermore, in addition, besides||
+furthermore|conj|bundan başka, ayrıca|The method is fast. Furthermore, it is cheap.|Yöntem hızlı. Bundan başka, ucuz.|moreover, additionally||
+in addition|conj|ek olarak, buna ek olarak|In addition to teaching, she writes textbooks.|Öğretmenliğe ek olarak ders kitapları yazıyor.|besides, as well as||
+besides|conj|ayrıca; -den başka|Besides being healthy, cycling is cheap.|Bisiklete binmek sağlıklı olmasının yanı sıra ucuzdur.|in addition to, apart from||
+likewise|conj|aynı şekilde|Plants need water; likewise, they need sunlight.|Bitkilerin suya ihtiyacı var; aynı şekilde güneş ışığına da.|similarly, in the same way||
+similarly|conj|benzer şekilde|Similarly, older children learned faster.|Benzer şekilde, büyük çocuklar daha hızlı öğrendi.|likewise||
+conversely|conj|tersine|Some foods raise blood sugar; conversely, others lower it.|Bazı yiyecekler kan şekerini yükseltir; tersine diğerleri düşürür.|on the other hand, in contrast||
+in contrast|conj|buna karşın, aksine|In contrast to his brother, he is very quiet.|Kardeşinin aksine çok sessiz.|by contrast, conversely||
+on the other hand|conj|öte yandan|The job pays well; on the other hand, the hours are long.|İş iyi para veriyor; öte yandan saatler uzun.|however, conversely||
+43
+instead|conj|onun yerine|He did not drive; instead, he walked.|Araba kullanmadı; onun yerine yürüdü.|rather, alternatively||
+otherwise|conj|aksi takdirde|Store the medicine in the fridge; otherwise, it will spoil.|İlacı buzdolabında sakla; aksi takdirde bozulur.|or else, if not||
+meanwhile|conj|bu arada, bu sırada|The engineers fixed the bridge. Meanwhile, traffic used another road.|Mühendisler köprüyü onardı. Bu sırada trafik başka yolu kullandı.|in the meantime||
+unless|conj|-medikçe, … olmazsa|Unless it rains, the match will go ahead.|Yağmur yağmazsa maç oynanacak.|if not, except if||
+provided that|conj|şartıyla, -mesi koşuluyla|You can borrow the book provided that you return it on time.|Zamanında geri getirmen şartıyla kitabı ödünç alabilirsin.|as long as, on condition that||
+as long as|conj|-dığı sürece|As long as you study regularly, you will improve.|Düzenli çalıştığın sürece gelişeceksin.|provided that, so long as||
+in case|conj|ihtimaline karşı|Take a coat in case it gets cold.|Hava soğur ihtimaline karşı bir mont al.|just in case||
+whereby|conj|-diği, ki bu sayede (yöntem/sistem)|The country introduced a system whereby citizens vote online.|Ülke, vatandaşların çevrim içi oy kullandığı bir sistem getirdi.|by which||
+albeit|conj|-se de, gerçi|The economy grew, albeit slowly.|Ekonomi büyüdü, yavaş da olsa.|although, though||
+despite|prep|-e rağmen (+ isim / -ing)|Despite the rain, the festival was a success.|Yağmura rağmen festival başarılı geçti.|in spite of, notwithstanding||
+44
+in spite of|prep|-e rağmen (+ isim / -ing)|In spite of his illness, he finished the race.|Hastalığına rağmen yarışı bitirdi.|despite||
+notwithstanding|prep|-e rağmen|Notwithstanding the cost, the project went ahead.|Maliyete rağmen proje devam etti.|despite, in spite of||
+due to|prep|-den dolayı, nedeniyle|The flight was delayed due to fog.|Uçuş sis nedeniyle ertelendi.|because of, owing to||
+owing to|prep|-den dolayı|Owing to bad weather, the ships stayed in port.|Kötü hava nedeniyle gemiler limanda kaldı.|due to, because of||
+on account of|prep|yüzünden, nedeniyle|The school was closed on account of the storm.|Okul fırtına yüzünden kapatıldı.|because of, due to||
+as a result of|prep|-in sonucu olarak|As a result of the drought, food prices rose.|Kuraklığın sonucu olarak gıda fiyatları arttı.|because of, owing to||
+in order to|conj|-mek için|She moved to London in order to study medicine.|Tıp okumak için Londra'ya taşındı.|so as to, to||
+so that|conj|-sin diye, -mesi için|Speak slowly so that everyone can understand.|Herkes anlayabilsin diye yavaş konuş.|in order that||
+now that|conj|madem, artık … olduğuna göre|Now that the exams are over, we can relax.|Sınavlar bittiğine göre artık rahatlayabiliriz.|since, as||
+whether|conj|-ip -mediği; ister … ister|Scientists are not sure whether the drug is safe.|Bilim insanları ilacın güvenli olup olmadığından emin değil.|if||
+45
+substantially|adv|önemli ölçüde|The new design substantially reduces energy use.|Yeni tasarım enerji kullanımını önemli ölçüde azaltıyor.|considerably, significantly|slightly|
+predominantly|adv|ağırlıklı olarak, çoğunlukla|The region is predominantly agricultural.|Bölge ağırlıklı olarak tarıma dayalı.|mainly, mostly||
+approximately|adv|yaklaşık olarak|The journey takes approximately three hours.|Yolculuk yaklaşık üç saat sürüyor.|roughly, about|exactly|
+gradually|adv|yavaş yavaş, kademeli olarak|The patient's condition gradually improved.|Hastanın durumu yavaş yavaş iyileşti.|slowly, steadily|suddenly|
+inevitably|adv|kaçınılmaz olarak|Rapid growth inevitably leads to problems.|Hızlı büyüme kaçınılmaz olarak sorunlara yol açar.|unavoidably, necessarily||
+presumably|adv|muhtemelen, tahminen|The letter was presumably written by the king.|Mektup muhtemelen kral tarafından yazıldı.|probably, apparently||
+ultimately|adv|sonunda, nihayetinde|Ultimately, the decision is up to the voters.|Nihayetinde karar seçmenlere kalmış.|finally, eventually||
+simultaneously|adv|aynı anda|The two experiments were carried out simultaneously.|İki deney aynı anda yapıldı.|at the same time, concurrently|separately|
+subsequently|adv|sonradan, ardından|The building was damaged and subsequently demolished.|Bina hasar gördü ve ardından yıkıldı.|later, afterwards|previously|
+primarily|adv|esas olarak, öncelikle|The course is aimed primarily at beginners.|Kurs esas olarak yeni başlayanlara yönelik.|mainly, chiefly||
+46
+eventually|adv|sonunda|After many attempts, they eventually succeeded.|Birçok denemeden sonra sonunda başardılar.|finally, in the end||
+increasingly|adv|giderek|Cities are becoming increasingly crowded.|Şehirler giderek kalabalıklaşıyor.|more and more, progressively||
+largely|adv|büyük ölçüde|The success of the project was largely due to good planning.|Projenin başarısı büyük ölçüde iyi planlamadan kaynaklanıyordu.|mainly, mostly|slightly|
+readily|adv|kolayca; seve seve|The information is readily available online.|Bilgi çevrim içi olarak kolayca bulunabiliyor.|easily, willingly|reluctantly|
+steadily|adv|istikrarlı biçimde|Unemployment has fallen steadily.|İşsizlik istikrarlı biçimde düştü.|gradually, constantly|erratically|
+consistently|adv|tutarlı olarak, sürekli|She has consistently achieved high grades.|Sürekli yüksek notlar aldı.|regularly, constantly|inconsistently|
+explicitly|adv|açıkça|The law explicitly forbids smoking in schools.|Yasa okullarda sigara içmeyi açıkça yasaklıyor.|clearly, directly|implicitly|
+implicitly|adv|dolaylı olarak, örtük biçimde|The report implicitly criticises the government.|Rapor hükümeti dolaylı olarak eleştiriyor.|indirectly|explicitly|
+initially|adv|başlangıçta|Initially, the plan seemed simple.|Başlangıçta plan basit görünüyordu.|at first, originally|finally|
+potentially|adv|potansiyel olarak, olası olarak|The disease is potentially fatal.|Hastalık potansiyel olarak ölümcül.|possibly||
+47
+previously|adv|daha önce|The building was previously used as a school.|Bina daha önce okul olarak kullanılıyordu.|formerly, before|subsequently|
+rapidly|adv|hızla|The virus spread rapidly through the city.|Virüs şehirde hızla yayıldı.|quickly, swiftly|slowly|
+remarkably|adv|dikkat çekici biçimde|The results were remarkably similar.|Sonuçlar dikkat çekici biçimde benzerdi.|strikingly, surprisingly||
+respectively|adv|sırasıyla|Anna and Ben scored 80 and 90 respectively.|Anna ve Ben sırasıyla 80 ve 90 aldı.|in that order||
+seemingly|adv|görünüşe göre|The problem seemingly disappeared overnight.|Sorun görünüşe göre bir gecede ortadan kalktı.|apparently, outwardly||
+solely|adv|yalnızca|The decision was based solely on cost.|Karar yalnızca maliyete dayanıyordu.|only, exclusively||
+thereby|adv|böylece, bu suretle|The company cut costs, thereby increasing profits.|Şirket maliyetleri düşürdü ve böylece kârını artırdı.|thus, as a result||
+thoroughly|adv|tamamen, baştan sona|The room was thoroughly cleaned.|Oda baştan sona temizlendi.|completely, carefully|superficially|
+widely|adv|yaygın olarak, geniş çapta|The book was widely read in the 1990s.|Kitap 1990'larda geniş çapta okundu.|extensively, broadly|narrowly|
+arguably|adv|tartışmaya açık olsa da, muhtemelen|She is arguably the best writer of her generation.|Muhtemelen kuşağının en iyi yazarı.|possibly, probably||
+48
+drastically|adv|büyük ölçüde, köklü biçimde|The number of visitors fell drastically.|Ziyaretçi sayısı büyük ölçüde düştü.|dramatically, sharply|slightly|
+merely|adv|yalnızca, sadece|This is merely the first step.|Bu yalnızca ilk adım.|only, simply||
+nearly|adv|neredeyse|Nearly half of the population lives in cities.|Nüfusun neredeyse yarısı şehirlerde yaşıyor.|almost, virtually||
+scarcely|adv|neredeyse hiç; ancak|There was scarcely any food left.|Neredeyse hiç yiyecek kalmamıştı.|hardly, barely||
+somewhat|adv|biraz, bir ölçüde|The results were somewhat disappointing.|Sonuçlar biraz hayal kırıklığı yarattı.|slightly, rather|extremely|
+descend|v|inmek|The plane began to descend towards the airport.|Uçak havalimanına doğru alçalmaya başladı.|go down, drop|ascend|
+distinction|n|ayrım; üstünlük|There is an important distinction between weather and climate.|Hava durumu ile iklim arasında önemli bir ayrım var.|difference; excellence|similarity|
+dwell|v|ikamet etmek; (on) üzerinde durmak|Early humans dwelt in caves for thousands of years.|İlk insanlar binlerce yıl mağaralarda yaşadı.|live, reside||
+ease|v|hafifletmek, kolaylaştırmak|The new bridge will ease traffic in the city centre.|Yeni köprü şehir merkezindeki trafiği rahatlatacak.|relieve, alleviate|worsen|
+elicit|v|ortaya çıkarmak, (tepki) almak|The teacher's question elicited many different answers.|Öğretmenin sorusu pek çok farklı cevap aldı.|draw out, evoke||
+49
+evaporate|v|buharlaşmak|Water evaporates quickly in hot weather.|Su sıcak havada hızla buharlaşır.|vaporise, disappear|condense|
+excavate|v|kazı yapmak|Archaeologists excavated the site for ten years.|Arkeologlar alanda on yıl kazı yaptı.|dig, unearth|bury|
+execute|v|uygulamak; idam etmek|The plan was executed perfectly.|Plan kusursuz biçimde uygulandı.|carry out||
+fascinate|v|büyülemek|Space has always fascinated children.|Uzay çocukları her zaman büyülemiştir.|captivate, enthral|bore|
+fatigue|n|yorgunluk|Drivers should stop regularly to avoid fatigue.|Sürücüler yorgunluktan kaçınmak için düzenli mola vermeli.|tiredness, exhaustion|energy|
+forecast|v|tahmin etmek|Experts forecast a rise in unemployment next year.|Uzmanlar gelecek yıl işsizlikte artış tahmin ediyor.|predict, foresee||
+hostile|adj|düşmanca|The explorers entered a hostile environment with little water.|Kâşifler suyu az olan düşmanca bir ortama girdi.|unfriendly, aggressive|friendly|
+immense|adj|muazzam|The project required an immense amount of work.|Proje muazzam miktarda iş gerektirdi.|vast, huge|tiny|
+implement|v|uygulamak|The school will implement the new rules in September.|Okul yeni kuralları eylülde uygulayacak.|carry out, execute||
+implementation|n|uygulama, hayata geçirme|The implementation of the plan took three years.|Planın uygulanması üç yıl sürdü.|execution, application||
+50
+implicate|v|bulaştırmak, (suça) karıştırmak|The report implicates several officials in the scandal.|Rapor birkaç yetkiliyi skandala karıştırıyor.|involve, connect||
+incentive|n|teşvik|Lower taxes give companies an incentive to invest.|Düşük vergiler şirketlere yatırım yapmaları için teşvik sağlar.|motivation, encouragement|deterrent|
+incidence|n|görülme sıklığı|The incidence of the disease is higher in cities.|Hastalığın görülme sıklığı şehirlerde daha yüksek.|rate, frequency||
+inhabit|v|yaşamak, ikamet etmek|Rare birds inhabit the island.|Adada nadir kuşlar yaşıyor.|live in, occupy||
+inquire|v|sormak, soruşturmak|Several customers inquired about the new service.|Birkaç müşteri yeni hizmet hakkında bilgi istedi.|ask, investigate||
+interpretation|n|yorum|There are different interpretations of the poem.|Şiirin farklı yorumları var.|explanation, reading||
+involvement|n|katılım, dahil olma|Parents' involvement improves children's success at school.|Ebeveynlerin katılımı çocukların okul başarısını artırır.|participation||
+necessity|n|gereklilik|A car is a necessity for people living in rural areas.|Kırsalda yaşayanlar için araba bir ihtiyaçtır.|need, requirement|luxury|
+notably|adv|özellikle|Several countries, notably Japan, have ageing populations.|Başta Japonya olmak üzere birkaç ülkenin nüfusu yaşlanıyor.|especially, particularly||
+obesity|n|obezite|Obesity rates have doubled since 1980.|Obezite oranları 1980'den bu yana iki katına çıktı.|being overweight||
+51
+obligation|n|yükümlülük|Employers have an obligation to protect their workers.|İşverenlerin çalışanlarını koruma yükümlülüğü var.|duty, responsibility||
+offend|v|gücendirmek|The comments offended many readers.|Yorumlar pek çok okuru gücendirdi.|insult, upset|please|
+partial|adj|kısmi; taraflı|The plan was only a partial success.|Plan yalnızca kısmi bir başarıydı.|incomplete; biased|complete|
+prevail|v|hâkim olmak, galip gelmek|Common sense prevailed in the end.|Sonunda sağduyu galip geldi.|predominate, win|lose|
+privilege|n|ayrıcalık|Education should be a right, not a privilege.|Eğitim bir ayrıcalık değil, bir hak olmalı.|advantage, right|disadvantage|
+reputation|n|itibar, ün|The hospital has an excellent reputation.|Hastanenin mükemmel bir itibarı var.|fame, standing||
+reward|n|ödül|Students received a reward for their hard work.|Öğrenciler sıkı çalışmaları için ödül aldı.|prize, bonus|punishment|
+slope|n|eğim, yamaç|The village is built on a steep slope.|Köy dik bir yamaca kurulmuş.|incline, hillside||
+strata|n|katmanlar|Fossils were found in the lower strata of rock.|Fosiller kayanın alt katmanlarında bulundu.|layers, levels||
+succeed|v|başarmak; ardından gelmek|She succeeded in finding a cure for the disease.|Hastalığa bir tedavi bulmayı başardı.|achieve; follow|fail; precede|
+52
+suspend|v|askıya almak; asmak|The match was suspended because of heavy rain.|Maç şiddetli yağmur nedeniyle askıya alındı.|postpone, halt; hang|resume|
+talent|n|yetenek|The school helps students discover their talents.|Okul öğrencilerin yeteneklerini keşfetmelerine yardımcı oluyor.|gift, ability||
+temporary|adj|geçici|The workers live in temporary housing.|İşçiler geçici konutlarda yaşıyor.|short-term, provisional|permanent|
+withdraw|v|geri çekmek, çekilmek|The company withdrew the product from the market.|Şirket ürünü piyasadan çekti.|pull out, retreat|advance|
+abrupt|adj|ani|The meeting came to an abrupt end.|Toplantı ani bir şekilde sona erdi.|sudden, unexpected|gradual|
+accelerate|v|hızlandırmak|Global warming may accelerate the melting of glaciers.|Küresel ısınma buzulların erimesini hızlandırabilir.|speed up|slow down|
+accomplish|v|başarmak|The team accomplished its mission in record time.|Ekip görevini rekor sürede başardı.|achieve, complete|fail|
+ample|adj|bol, yeterli|There is ample evidence that smoking causes cancer.|Sigaranın kansere yol açtığına dair bol kanıt var.|plenty of, abundant|insufficient|
+battle|n|savaş, mücadele|The patient lost her battle with cancer.|Hasta kanserle mücadelesini kaybetti.|fight, struggle||
+compel|v|zorlamak|The illness compelled him to retire early.|Hastalık onu erken emekli olmaya zorladı.|force, oblige||
+53
+compile|v|derlemek|Researchers compiled a list of endangered plants.|Araştırmacılar nesli tehlikedeki bitkilerin bir listesini derledi.|collect, gather||
+confidential|adj|gizli|Patient records are strictly confidential.|Hasta kayıtları kesinlikle gizlidir.|secret, private|public|
+conservation|n|koruma|The charity works on the conservation of forests.|Yardım kuruluşu ormanların korunması üzerine çalışıyor.|preservation, protection|destruction|
+consistent|adj|tutarlı|The results are consistent with earlier studies.|Sonuçlar önceki çalışmalarla tutarlı.|stable, steady|inconsistent|
+convene|v|toplanmak, toplantıya çağırmak|The committee will convene next week.|Kurul gelecek hafta toplanacak.|assemble, gather||
+convention|n|gelenek; sözleşme; kongre|It is a convention to shake hands when you meet.|Tanışırken el sıkışmak bir gelenektir.|custom; agreement; conference||
+cruel|adj|zalim|Many people think keeping wild animals in cages is cruel.|Pek çok insan vahşi hayvanları kafeste tutmanın zalimce olduğunu düşünüyor.|brutal, harsh|kind|
+deliberately|adv|kasıtlı olarak|The fire was started deliberately.|Yangın kasıtlı olarak çıkarıldı.|intentionally, on purpose|accidentally|
+drastic|adj|köklü, sert|The company took drastic measures to cut costs.|Şirket maliyetleri düşürmek için sert önlemler aldı.|radical, extreme|mild|
+drawback|n|dezavantaj|The main drawback of the plan is its cost.|Planın ana dezavantajı maliyeti.|disadvantage, downside|advantage|
+54
+embody|v|somutlaştırmak|The statue embodies the spirit of the nation.|Heykel ulusun ruhunu somutlaştırıyor.|represent, personify||
+eminent|adj|seçkin, ünlü|An eminent scientist gave the opening speech.|Açılış konuşmasını seçkin bir bilim insanı yaptı.|distinguished, famous|unknown|
+esteem|n|saygı, itibar|She is held in high esteem by her colleagues.|Meslektaşları ona büyük saygı duyuyor.|respect, regard|contempt|
+evacuate|v|tahliye etmek|Thousands of people were evacuated before the hurricane.|Kasırgadan önce binlerce kişi tahliye edildi.|empty, clear||
+exhaust|v|tüketmek; çok yormak|The long climb exhausted the hikers.|Uzun tırmanış yürüyüşçüleri çok yordu.|use up; tire out||
+expenditure|n|harcama|Public expenditure on health has increased.|Sağlığa yönelik kamu harcaması arttı.|spending, expense|income|
+foster|v|desteklemek, beslemek|Teachers should foster curiosity in their students.|Öğretmenler öğrencilerinde merakı desteklemeli.|encourage, nurture|hinder|
+harass|v|taciz etmek, rahatsız etmek|Journalists were harassed by the police.|Gazeteciler polis tarafından taciz edildi.|pester, torment||
+hazard|n|tehlike, risk|Ice on the roads is a serious hazard for drivers.|Yollardaki buz sürücüler için ciddi bir tehlike.|danger, threat|safety|
+identical|adj|aynı, özdeş|The twins are almost identical.|İkizler neredeyse aynı.|same, alike|different|
+55
+illustrate|v|örneklerle açıklamak|The example illustrates how the system works.|Örnek sistemin nasıl çalıştığını gösteriyor.|show, demonstrate||
+indication|n|belirti, işaret|There is no indication that prices will fall.|Fiyatların düşeceğine dair hiçbir işaret yok.|sign, signal||
+infinite|adj|sonsuz|The universe may be infinite.|Evren sonsuz olabilir.|endless, limitless|finite|
+invade|v|istila etmek|The army invaded the country in 1939.|Ordu ülkeyi 1939'da istila etti.|occupy, attack|withdraw|
+keen|adj|hevesli; keskin|She is keen to learn new languages.|Yeni diller öğrenmeye hevesli.|eager; sharp|reluctant|
+mature|adj|olgun|Mature trees absorb more carbon than young ones.|Olgun ağaçlar genç ağaçlardan daha fazla karbon emer.|grown-up, developed|immature|
+mutual|adj|karşılıklı|The agreement is based on mutual trust.|Anlaşma karşılıklı güvene dayanıyor.|shared, reciprocal||
+obstacle|n|engel|Lack of money is the main obstacle to the project.|Para eksikliği projenin önündeki başlıca engel.|barrier, hurdle|aid|
+overwhelming|adj|ezici, karşı konulmaz|The response to the appeal was overwhelming.|Çağrıya verilen yanıt ezici düzeydeydi.|overpowering, vast||
+phase|n|evre, aşama|The first phase of the project is complete.|Projenin ilk aşaması tamamlandı.|stage, period||
+56
+quantity|n|miktar|The factory produces large quantities of steel.|Fabrika büyük miktarda çelik üretiyor.|amount, volume||
+recovery|n|iyileşme, toparlanma|The economy is showing signs of recovery.|Ekonomi toparlanma işaretleri gösteriyor.|revival, healing|decline|
+reign|v|hüküm sürmek|Queen Victoria reigned for sixty-three years.|Kraliçe Victoria altmış üç yıl hüküm sürdü.|rule, govern||
+relevant|adj|ilgili, konuyla bağlantılı|Please include only relevant information in your report.|Lütfen raporuna yalnızca ilgili bilgileri koy.|related, pertinent|irrelevant|
+sceptical|adj|şüpheci|Many scientists remain sceptical about the claim.|Pek çok bilim insanı iddiaya şüpheyle yaklaşıyor.|doubtful, dubious|convinced|
+stagnation|n|durgunluk|Years of stagnation left many people unemployed.|Yıllarca süren durgunluk pek çok insanı işsiz bıraktı.|standstill, inactivity|growth|
+surpass|v|geçmek, aşmak|Sales surpassed all expectations.|Satışlar tüm beklentileri aştı.|exceed, outdo||
+track|v|izlemek, takip etmek|Scientists track the movements of whales by satellite.|Bilim insanları balinaların hareketlerini uydu ile izliyor.|follow, trace||
+unrest|n|huzursuzluk, kargaşa|The price rises led to social unrest.|Fiyat artışları toplumsal huzursuzluğa yol açtı.|disorder, turmoil|peace|
+welfare|n|refah, sosyal yardım|The organisation works for the welfare of animals.|Kuruluş hayvanların refahı için çalışıyor.|well-being||
+57
+witness|v|tanık olmak|Several people witnessed the accident.|Kazaya birkaç kişi tanık oldu.|see, observe||
+alienate|v|yabancılaştırmak|The new policy alienated many voters.|Yeni politika pek çok seçmeni uzaklaştırdı.|estrange, isolate|unite|
+appoint|v|atamak|She was appointed head of the department.|Bölüm başkanlığına atandı.|assign, name|dismiss|
+ascend|v|yükselmek, tırmanmak|The climbers ascended the mountain in two days.|Dağcılar dağa iki günde tırmandı.|climb, rise|descend|
+astonish|v|hayrete düşürmek|The size of the cave astonished the explorers.|Mağaranın büyüklüğü kâşifleri hayrete düşürdü.|amaze, astound||
+barely|adv|ancak, güçbela|He could barely hear the speaker.|Konuşmacıyı güçbela duyabiliyordu.|hardly, scarcely||
+bargain|v|pazarlık etmek|Tourists often bargain with street sellers.|Turistler sokak satıcılarıyla sık sık pazarlık eder.|negotiate||
+breed|v|üremek; yetiştirmek|Some birds breed only once a year.|Bazı kuşlar yılda yalnızca bir kez ürer.|reproduce; raise||
+component|n|bileşen|Trust is an essential component of any relationship.|Güven her ilişkinin temel bir bileşenidir.|part, element||
+compromise|v|uzlaşmak; tehlikeye atmak|The two sides finally reached a compromise.|İki taraf sonunda bir uzlaşmaya vardı.|settle; endanger||
+58
+confrontation|n|çatışma, yüzleşme|The protest ended in a confrontation with the police.|Protesto polisle bir çatışmayla sona erdi.|conflict, clash||
+contest|v|itiraz etmek; yarışmak|The candidate contested the result of the election.|Aday seçim sonucuna itiraz etti.|dispute; compete||
+convey|v|iletmek, aktarmak|The photographs convey the horror of the war.|Fotoğraflar savaşın dehşetini aktarıyor.|transmit, communicate||
+corresponding|adj|karşılık gelen|Sales rose by ten percent compared with the corresponding period last year.|Satışlar geçen yılın aynı dönemine göre yüzde on arttı.|equivalent, matching||
+crude|adj|ham; kaba|Crude oil prices rose sharply.|Ham petrol fiyatları keskin biçimde yükseldi.|raw; rough|refined|
+deterioration|n|kötüleşme|Doctors noticed a deterioration in his condition.|Doktorlar durumunda bir kötüleşme fark etti.|decline, worsening|improvement|
+devastation|n|yıkım, tahribat|The storm left a trail of devastation.|Fırtına arkasında bir yıkım izi bıraktı.|destruction, ruin||
+divert|v|yönünü değiştirmek; oyalamak|Police diverted traffic away from the city centre.|Polis trafiği şehir merkezinden uzağa yönlendirdi.|redirect; distract||
+eligible|adj|uygun, hak sahibi|Students over eighteen are eligible to vote.|On sekiz yaşın üzerindeki öğrenciler oy kullanma hakkına sahip.|qualified, entitled|ineligible|
+exert|v|(güç, etki) uygulamak|The moon exerts a pull on the oceans.|Ay okyanuslar üzerinde bir çekim kuvveti uygular.|apply, exercise||
+59
+extract|v|çıkarmak, elde etmek|Oil is extracted from the seeds.|Yağ tohumlardan elde ediliyor.|remove, obtain|insert|
+flourish|v|gelişmek, serpilmek|Art and science flourished during this period.|Bu dönemde sanat ve bilim gelişti.|thrive, prosper|decline|
+fraction|n|küçük bir kısım|Only a fraction of the waste is recycled.|Atıkların yalnızca küçük bir kısmı geri dönüştürülüyor.|portion, fragment|whole|
+fulfill|v|yerine getirmek|The company failed to fulfill its promises.|Şirket vaatlerini yerine getiremedi.|carry out, satisfy||
+futile|adj|boşuna, yararsız|All attempts to save the ship were futile.|Gemiyi kurtarma çabalarının hepsi boşunaydı.|useless, pointless|useful|
+grasp|v|kavramak|Children quickly grasp new technology.|Çocuklar yeni teknolojiyi çabucak kavrar.|understand, grip||
+greed|n|açgözlülük|The crisis was caused partly by greed.|Krize kısmen açgözlülük neden oldu.|avarice|generosity|
+immune|adj|bağışık|Some people seem immune to the virus.|Bazı insanlar virüse bağışık görünüyor.|resistant, protected|vulnerable|
+impair|v|bozmak, zayıflatmak|Alcohol impairs your ability to drive.|Alkol araç kullanma yeteneğini bozar.|damage, weaken|improve|
+incline|v|eğilimli olmak; eğmek|I am inclined to agree with the author.|Yazarla aynı fikirde olmaya meyilliyim.|tend, lean||
+60
+incorporate|v|dahil etmek, bünyesine katmak|The new design incorporates solar panels.|Yeni tasarım güneş panellerini de içeriyor.|include, integrate|exclude|
+literacy|n|okuryazarlık|Literacy rates have risen across the region.|Bölge genelinde okuryazarlık oranları yükseldi.|reading ability|illiteracy|
+miracle|n|mucize|It was a miracle that nobody was hurt.|Kimsenin yaralanmaması bir mucizeydi.|wonder, marvel||
+modest|adj|mütevazı; ölçülü|The company made a modest profit last year.|Şirket geçen yıl mütevazı bir kâr elde etti.|humble; moderate|arrogant|
+negligible|adj|önemsiz, ihmal edilebilir|The risk to the public is negligible.|Halk için risk önemsiz düzeyde.|insignificant, trivial|significant|
+notion|n|kavram, fikir|The notion that money brings happiness is questionable.|Paranın mutluluk getirdiği fikri tartışmalı.|idea, concept||
+odd|adj|tuhaf; tek (sayı)|It is odd that nobody noticed the mistake.|Hatayı kimsenin fark etmemesi tuhaf.|strange, unusual|normal|
+opposition|n|muhalefet, karşı çıkma|The plan faced strong opposition from residents.|Plan sakinlerin güçlü muhalefetiyle karşılaştı.|resistance, objection|support|
+`,
 /* ---------- taktik ---------- */
 taktik:`
 <p>YDS 80 soru, 180 dakika. <b>Yanlış doğruyu götürmez</b>: hiçbir soruyu boş bırakma, emin olmadığında eleyip işaretle. 80 puan için <b>64 doğru</b> yeterli; yani 16 soru kaçırma hakkın var.</p>

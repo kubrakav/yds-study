@@ -143,7 +143,27 @@ nav.tabs a.on::after{content:"";position:absolute;left:22%;right:22%;bottom:6px;
 .gtimer{height:8px;border-radius:4px;background:var(--line);overflow:hidden}.gtimer i{display:block;height:100%;background:var(--pen);transition:width 1s linear}
 
 
+
+/* ---- bölüm renkleri (yumuşak), doğru/yanlış efektleri ---- */
+body[data-sec=bugun]{--hl:light-dark(#e6dbff,#4b3a7d);--hl2:light-dark(#a98bf0,#9a80e6)}
+body[data-sec=kelime]{--hl:light-dark(#d9e9fb,#2c4a6e);--hl2:light-dark(#7fb0e6,#7aa9de)}
+body[data-sec=gramer]{--hl:light-dark(#d7f0e6,#24584a);--hl2:light-dark(#6cc3a2,#66b89a)}
+body[data-sec=okuma]{--hl:light-dark(#fde6d4,#6a4430);--hl2:light-dark(#eea676,#e0a07a)}
+body[data-sec=deneme]{--hl:light-dark(#f7dce6,#683246);--hl2:light-dark(#e391ad,#d98aa6)}
+body[data-sec=taktik]{--hl:light-dark(#f3ecc8,#5b5124);--hl2:light-dark(#d3bd5c,#c9b45a)}
+nav.tabs a.on svg{color:var(--hl2)}nav.tabs a.on::after{background:var(--hl2)}
+.chip.lv1{background:light-dark(#d7f0e6,#24584a);border-color:transparent}.chip.lv2{background:light-dark(#d9e9fb,#2c4a6e);border-color:transparent}.chip.lv3{background:light-dark(#f7dce6,#683246);border-color:transparent}
+.pick.ok{box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 25%,transparent),0 0 18px color-mix(in srgb,var(--ok) 35%,transparent)}
+.zapb{position:fixed;z-index:60;pointer-events:none;font-size:30px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 6px #ffcc33)}
+.spark.zx{color:var(--bad);text-shadow:0 0 6px color-mix(in srgb,var(--bad) 60%,transparent);font-weight:800}
+@media(prefers-reduced-motion:no-preference){
+ .zapb{animation:zapin .85s ease-out forwards}@keyframes zapin{0%{transform:translate(-50%,-90%) scale(.3) rotate(-20deg);opacity:0}25%{transform:translate(-50%,-50%) scale(1.25) rotate(8deg);opacity:1}45%{transform:translate(-50%,-50%) scale(1) rotate(-4deg)}100%{transform:translate(-50%,-40%) scale(.9);opacity:0}}
+ .pick.zapd{animation:shake .35s ease,zflash .6s ease}@keyframes zflash{0%{background:color-mix(in srgb,var(--bad) 25%,var(--card))}100%{}}
+ .pick.ok{animation:glow 1.2s ease}@keyframes glow{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent)}100%{box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 25%,transparent),0 0 18px color-mix(in srgb,var(--ok) 35%,transparent)}}
+}
+
 /* ---- hedef ve plan ---- */
+.seg{margin-bottom:6px}.daysrow[hidden]{display:none}.daysrow{max-height:180px;overflow-y:auto;padding:2px}.daysrow button.done:not(.pri){border-color:var(--ok);color:var(--ok)}
 .plancard{display:block;border:2px solid var(--pen);background:linear-gradient(135deg,color-mix(in srgb,var(--pen) 10%,var(--card)),var(--card))}
 .pform{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:12px}
 .pform label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--mut)}.pform label[hidden]{display:none}
@@ -248,7 +268,7 @@ table.tbl{border-collapse:collapse;width:100%;margin:8px 0;font-size:14px}table.
 <body>
 <nav class="tabs" id="tabs"></nav>
 <main class="wrap" id="app"></main>
-<script src="fb.js"></script><script src="content.js"></script><script src="grammar.js"></script><script src="extra2.js"></script><script src="reading2.js"></script><script src="extra3a.js"></script><script src="extra3b.js"></script><script src="extra3c.js"></script><script src="extra4.js"></script>
+<script src="fb.js"></script><script src="content.js"></script><script src="grammar.js"></script><script src="extra2.js"></script><script src="reading2.js"></script><script src="extra3a.js"></script><script src="extra3b.js"></script><script src="extra3c.js"></script><script src="extra4.js"></script><script src="extra5.js"></script><script src="reading3a.js"></script><script src="reading3b.js"></script>
 <div id="tip" class="tip" hidden></div>
 <script>
 {
@@ -392,7 +412,7 @@ owing to|prep|yüzünden, nedeniyle|The flight was delayed owing to heavy fog.|
 with regard to|prep|ile ilgili olarak|There is little data with regard to rural schools.|
 in contrast to|prep|-in aksine|In contrast to its neighbours, the country kept its borders open.|
 along with|prep|ile birlikte|Fever, along with fatigue, is a common symptom.|`;
-const POS={n:"İsim",v:"Fiil",adj:"Sıfat",adv:"Zarf",phr:"Phrasal / kalıp fiil",prep:"Edat öbeği"};
+const POS={conj:"Bağlaç / geçiş ifadesi",n:"İsim",v:"Fiil",adj:"Sıfat",adv:"Zarf",phr:"Phrasal / kalıp fiil",prep:"Edat öbeği"};
 const W=RAW.trim().split("\n").map(l=>{const[w,p,t,e,k]=l.split("|");return{w,p,t,e,k:!!k}});
 
 /* ===================== DATA: GRAMER ===================== */
@@ -697,6 +717,7 @@ R.forEach(r=>{if(!r.tr&&EX.rtr)r.tr=EX.rtr[r.id]});
 Object.entries(EX.sets||{}).forEach(([k,st])=>{Y[k]={t:st.t,d:st.d,mix:1,qs:st.qs.map(q=>[q[0],q[1],q[2],q[3]])};st.qs.forEach((q,i)=>FBX["y-"+k+"-"+i]=[q[4],q[5]])});
 const X3=window.EXTRA3||{sets:{},vp:"",np:"",pw:[],sch:{},kaynak:[]};
 Object.entries(X3.sets||{}).forEach(([k,st])=>{Y[k]={t:st.t,d:st.d,mix:1,x3:1,qs:st.qs.map(q=>[q[0],q[1],q[2],q[3]])};st.qs.forEach((q,i)=>FBX["y-"+k+"-"+i]=[q[4],q[5]])});
+Object.entries((window.EXTRA5||{}).sets||{}).forEach(([k,st])=>{Y[k]={t:st.t,d:st.d,mix:1,x3:1,qs:st.qs.map(q=>[q[0],q[1],q[2],q[3]])};st.qs.forEach((q,i)=>FBX["y-"+k+"-"+i]=[q[4],q[5]])});
 const VP=(X3.vp||"").trim().split("\n").map(l=>l.split("|")).map(([w,p,t])=>({w,p,t,k:"v"})),NP=(X3.np||"").trim().split("\n").map(l=>l.split("|")).map(([w,p,t])=>({w,p,t,k:"n"}));
 const DW=[];(EX.days||"").split("\n").reduce((d,l)=>{l=l.trim();if(/^\d+$/.test(l))return +l;if(l.includes("|")){const f=l.split("|");DW.push({w:f[0],p:f[1],t:f[2],e:f[3],et:f[4],s:f[5],a:f[6],fm:f[7],day:d})}return d},0);
 const WTR=window.WTR||{};
@@ -710,6 +731,8 @@ if(GR.length){const old=Object.fromEntries(L.map(l=>[l.id,l]));
 /* ---- okuma 2: yeni metinler ve metin sözlükleri ---- */
 const RD2=window.READ2||{gloss:{},passages:[]};
 RD2.passages.forEach(r=>{R.push({id:r.id,f:r.f,t:r.t,x:r.x,tr:r.tr,gl:r.gloss,qs:r.qs.map(q=>[q[0],q[1],q[2],q[3]])});r.qs.forEach((q,i)=>FBX[r.id+"-"+i]=["",q[4]])});
+R.forEach(r=>{if(!r.lv)r.lv=2});
+((window.READ3||{}).passages||[]).forEach(r=>{R.push({id:r.id,lv:r.lv,src:r.src,f:r.f,t:r.t,x:r.x,tr:r.tr,gl:r.gloss,qs:r.qs.map(q=>{const c=q[1][q[2]],o=[...q[1]].sort(()=>Math.random()-.5);return[q[0],o,o.indexOf(c),q[3]]})});r.qs.forEach((q,i)=>FBX[r.id+"-"+i]=["",q[4]])});
 R.forEach(r=>{if(!r.gl)r.gl=RD2.gloss[r.id]||""});
 const POSTR={n:"isim",v:"fiil",adj:"sıfat",adv:"zarf",phr:"kalıp",prep:"edat",conj:"bağlaç"};
 function glossOf(r){const list=(r.gl||"").trim().split("\n").filter(Boolean).map(l=>{const[f,lem,p,t]=l.split("|");return{f,lem,p,t}});
@@ -763,10 +786,12 @@ function trQ(w){
   const pool=shuf(allWords().filter(x=>x.p===w.p&&x.w!==w.w)).slice(0,4).map(x=>x.w),o=shuf([...pool,w.w]);
   return{id:"t-"+w.w,stem:`“${w.t}” anlamına gelen kelime hangisidir?`,o,a:o.indexOf(w.w),ex:`<b>${w.w}</b>: ${w.t}`,tag:"Kelime"}}
 const dstem=w=>w.length>4?w.slice(0,Math.max(3,w.length-2)):w;
+const CCAT={};[["z","although whereas nevertheless nonetheless however yet in contrast on the other hand conversely albeit despite in spite of notwithstanding instead"],["s","therefore thus hence consequently accordingly as a result of"],["e","moreover furthermore in addition besides likewise similarly"],["k","unless provided that as long as in case otherwise"],["n","due to owing to on account of now that"],["a","in order to so that"],["t","meanwhile"],["w","whereby whether"]].forEach(([c,l])=>{["in contrast","on the other hand","as a result of","in addition","provided that","as long as","in case","due to","owing to","on account of","now that","in order to","so that","in spite of"].forEach(m=>{if(l.includes(m)){CCAT[m]=c;l=l.replace(m,"")}});l.split(/\s+/).filter(Boolean).forEach(x=>CCAT[x]=c)});
 function dq(w){
   const re=new RegExp("\\b"+esc(dstem(w.w))+"\\w*","i"),m=w.e.match(re);
   const form=m?m[0]:w.w,stem=w.e.replace(re,"----");
-  const pool=shuf(DW.filter(x=>x.p===w.p&&x.w!==w.w)).slice(0,4).map(x=>{const f=x.w;return f});
+  const cc=CCAT[w.w.toLowerCase()],isC=w.p==="conj"||w.p==="prep";
+  const pool=shuf(DW.filter(x=>x.w!==w.w&&(isC?((x.p==="conj"||x.p==="prep")&&CCAT[x.w.toLowerCase()]!==cc):x.p===w.p&&!(w.s||"").toLowerCase().split(/,\s*/).includes(x.w.toLowerCase())))).slice(0,4).map(x=>x.w);
   const lw=form.toLowerCase(),suf=lw.startsWith(w.w)?lw.slice(w.w.length):"";
   const conj=base=>!suf?base:(/^e/.test(suf)&&/e$/.test(base)?base+suf.slice(1):(/^ing/.test(suf)&&/e$/.test(base)?base.slice(0,-1)+suf:base+suf));
   const opts=shuf([form,...pool.map(conj)]);
@@ -824,7 +849,7 @@ function denemeler(){if(DEN)return DEN;let sd=7;const rnd=()=>{sd=(sd*16807)%214
     return [...t("kel",3),...t("gm",2),...t("ed",2),...t("bg",1),...cl[k],...t("cum",3),...t("cev",2),...r.qs.slice(0,4).map((_,i)=>Q[r.id+"-"+i]),...t("di",2),...t("yak",2),...t("par",2),...t("boz",2)].filter(Boolean)});
   return DEN}
 /* ---- istatistik: konu bazında doğru oranı, günlük hedef ---- */
-const YCAT={ykelime:"Kelime",yphrasal:"Phrasal verb'ler",yedat:"Edatlar",yedat2:"Edatlar",ybaglac:"Bağlaçlar",ybaglac2:"Bağlaçlar",cloze:"Cloze test",cumle:"Cümle tamamlama",ceviri:"Çeviri",paragraf:"Paragraf tamamlama",bozan:"Anlam bütünlüğü",yakin:"Yakın anlam",diyalog:"Diyalog"};Object.entries(X3.sets||{}).forEach(([k,s])=>YCAT[k]=s.cat);
+const YCAT={ykelime:"Kelime",yphrasal:"Phrasal verb'ler",yedat:"Edatlar",yedat2:"Edatlar",ybaglac:"Bağlaçlar",ybaglac2:"Bağlaçlar",cloze:"Cloze test",cumle:"Cümle tamamlama",ceviri:"Çeviri",paragraf:"Paragraf tamamlama",bozan:"Anlam bütünlüğü",yakin:"Yakın anlam",diyalog:"Diyalog"};Object.entries((window.EXTRA5||{}).sets||{}).forEach(([k,s])=>YCAT[k]=s.cat);Object.entries(X3.sets||{}).forEach(([k,s])=>YCAT[k]=s.cat);
 function catOf(q){const id=q.id||"";let m;
   if(m=id.match(/^[gfe]-([a-z]+)-/)){if(m[1]==="edat")return"Edatlar";if(m[1]==="baglac")return"Bağlaçlar";const l=L.find(x=>x.id===m[1]);return l?l.t:"Dil bilgisi"}
   if(m=id.match(/^y-([a-z0-9]+)-/))return YCAT[m[1]]||"YDS testleri";
@@ -926,7 +951,7 @@ function home(){
 let vmode="gunluk",gday=1,vfilter="k",vsearch="";
 function wordList(){
   if(vfilter==="all")return allWords();if(vfilter==="k")return W.filter(w=>w.k);
-  if(vfilter[0]==="g")return DW.filter(w=>w.day==+vfilter.slice(1)).map(w=>({...w,d:0}));if(vfilter==="m0")return MW;if(vfilter[0]==="m")return MW.filter(w=>w.d==+vfilter.slice(1));
+  if(vfilter[0]==="t"){const[g,k]=vfilter.slice(1).split("~");return DW.filter(GGRP.find(x=>x[0]===g)[2]).slice((k-1)*10,k*10).map(w=>({...w,d:0}))}if(vfilter[0]==="g")return DW.filter(w=>w.day==+vfilter.slice(1)).map(w=>({...w,d:0}));if(vfilter==="m0")return MW;if(vfilter[0]==="m")return MW.filter(w=>w.d==+vfilter.slice(1));
   return allWords().filter(w=>w.p===vfilter)}
 function kelime(){
   const days=[...new Set(MW.map(w=>w.d))].sort((a,b)=>a-b);
@@ -975,22 +1000,32 @@ function synD(w,anti){
   const key=anti?"a":"s",ans=w[key].split(",")[0].trim(),pool=shuf(DW.filter(x=>x.w!==w.w&&x[key])).slice(0,4).map(x=>x[key].split(",")[0].trim());
   const o=shuf([...new Set([...pool,ans])]).slice(0,5);if(!o.includes(ans))o[0]=ans;
   return{id:"d"+(anti?"z":"e")+"-"+w.w,stem:`<b style="font-size:22px">${w.w}</b> <span class="mut">(${w.p}) · ${w.t}</span><br>${anti?"Zıt anlamlısı":"Eş ya da yakın anlamlısı"} hangisidir?`,o,a:o.indexOf(ans),ex:`<b>${w.w}</b> → eş: ${w.s||"—"} · zıt: ${w.a||"—"}`,tag:anti?"Zıt anlam":"Eş anlam",tr:w.e+" — "+w.et}}
+let gview="gun",ggrp="n",gset=1;
+const GGRP=[["n","İsim",w=>w.p==="n"],["v","Fiil",w=>w.p==="v"],["adj","Sıfat",w=>w.p==="adj"],["adv","Zarf",w=>w.p==="adv"],["conj","Bağlaç ve geçiş ifadeleri",w=>w.p==="conj"||w.p==="prep"]];
 function gunluk(body){
-  const days=[...new Set(DW.map(w=>w.day))],list=DW.filter(w=>w.day===gday),known=list.filter(w=>(S.box[w.w]||0)>=3).length;
+  const days=[...new Set(DW.map(w=>w.day))];
+  const gdef=GGRP.find(g=>g[0]===ggrp),gall=DW.filter(gdef[2]),nsets=Math.max(1,Math.ceil(gall.length/10));if(gset>nsets)gset=1;
+  const list=gview==="gun"?DW.filter(w=>w.day===gday):gall.slice((gset-1)*10,gset*10),known=list.filter(w=>(S.box[w.w]||0)>=3).length;
+  const lbl=gview==="gun"?gday+". gün":gdef[1]+" · "+gset+". set",key=gview==="gun"?"gun-"+gday:"grp-"+ggrp+"-"+gset;
   const hl=(e,w)=>e.replace(new RegExp("\\b("+esc(dstem(w))+"\\w*)","i"),"<mark>$1</mark>");
-  body.innerHTML=`<p class="mut">Günlük program: her gün 10 kelime, cümle içinde, Türkçesi, eş ve zıt anlamlıları ve diğer halleriyle. İlk 5 günün kelimeleri e-YDS'de çıkmış kelimelerden, 6–10. günler sık sorulan akademik kelimelerden seçildi. Cümleler bu uygulama için yazıldı.</p>
-  <div class="row">${days.map(d=>`<button data-d="${d}" class="${d===gday?"pri":""}" style="min-width:52px">${d}. gün</button>`).join("")}</div>
-  <div class="card"><h3>${gday}. gün · ${list.length} kelime</h3><p class="mut small">${known}/${list.length} kelime öğrenildi (kartlarda 3 kez ‘Biliyorum’).</p>
-  <div class="row"><button class="pri" id="dt">Gün testi (cümle içinde)</button><button id="de">Eş anlam testi</button><button id="dz">Zıt anlam testi</button><button id="dk">Bu günün kartları</button></div></div>
+  body.innerHTML=`<p class="mut">Günlük program: her gün 10 kelime, cümle içinde, Türkçesi, eş ve zıt anlamlıları ve diğer halleriyle. 60 gün, ~600 kelime: ilk 5 gün e-YDS'de çıkmış kelimeler, 6–10. günler sık akademik kelimeler, 11–40. ve 49–60. günler ÖSYM sınavlarında en sık geçenler (sıklık sırasıyla), 41–44. günler bağlaç ve geçiş ifadeleri, 45–48. günler zarflar. ‘Türe göre’ ile isim, fiil, sıfat, zarf ve bağlaçları ayrı ayrı 10'arlı setlerle çalışabilirsin. Cümleler ve çeviriler bu uygulama için yazıldı.</p>
+  <div class="row seg"><button id="gv1" class="${gview==="gun"?"pri":""}">Günlere göre (karışık)</button><button id="gv2" class="${gview==="tur"?"pri":""}">Türe göre (gruplar)</button></div>
+  ${gview==="tur"?`<div class="row">${GGRP.map(g=>`<button data-g="${g[0]}" class="${g[0]===ggrp?"pri":""}">${g[1]} <span class="small">(${DW.filter(g[2]).length})</span></button>`).join("")}</div><div class="row daysrow">${Array.from({length:nsets},(_,i)=>i+1).map(k=>`<button data-s="${k}" class="${k===gset?"pri":""}${S.best["grp-"+ggrp+"-"+k]!=null?" done":""}" style="min-width:52px">${k}. set</button>`).join("")}</div>`:""}
+  <div class="row daysrow" ${gview==="tur"?"hidden":""}>${days.map(d=>`<button data-d="${d}" class="${d===gday?"pri":""}${S.best["gun-"+d]!=null?" done":""}" style="min-width:52px">${d}. gün</button>`).join("")}</div>
+  <div class="card"><h3>${lbl} · ${list.length} kelime</h3><p class="mut small">${known}/${list.length} kelime öğrenildi (kartlarda 3 kez ‘Biliyorum’).</p>
+  <div class="row"><button class="pri" id="dt">${gview==="gun"?"Gün testi":"Set testi"} (cümle içinde)</button><button id="de">Eş anlam testi</button><button id="dz">Zıt anlam testi</button><button id="dk">Bu günün kartları</button></div></div>
   ${list.map(w=>`<div class="dcard"><span class="w">${w.w}</span> <span class="chip">${POS[w.p]||w.p}</span> <button class="back" data-say="${esc(w.w)}">Dinle</button><br><b>${w.t}</b>
    <p class="fs">${hl(w.e,w.w)}</p><p class="trn mut">${w.et}</p>
    <p class="small">${w.s?`<b>Eş anlamlı:</b> ${w.s}`:""}${w.a?`<br><b>Zıt anlamlı:</b> ${w.a}`:""}${w.fm?`<br><b>Diğer halleri:</b> ${w.fm}`:""}</p></div>`).join("")}`;
   body.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{gday=+b.dataset.d;kelime()});
+  body.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>{ggrp=b.dataset.g;gset=1;kelime()});
+  body.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{gset=+b.dataset.s;kelime()});
+  document.getElementById("gv1").onclick=()=>{gview="gun";kelime()};document.getElementById("gv2").onclick=()=>{gview="tur";kelime()};
   body.querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>{const w=DW.find(x=>esc(x.w)===b.dataset.say);try{const u=new SpeechSynthesisUtterance(w.w+". "+w.e);u.lang="en-GB";speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}});
-  document.getElementById("dt").onclick=()=>run(shuf(list).map(dq),gday+". gün testi","gun-"+gday);
-  document.getElementById("de").onclick=()=>run(shuf(list.filter(w=>w.s)).map(w=>synD(w,0)),gday+". gün · eş anlam");
-  document.getElementById("dz").onclick=()=>run(shuf(list.filter(w=>w.a)).map(w=>synD(w,1)),gday+". gün · zıt anlam");
-  document.getElementById("dk").onclick=()=>{vmode="kart";vfilter="g"+gday;kelime()};
+  document.getElementById("dt").onclick=()=>run(shuf(list).map(dq),lbl+" testi",key);
+  document.getElementById("de").onclick=()=>run(shuf(list.filter(w=>w.s)).map(w=>synD(w,0)),lbl+" · eş anlam");
+  document.getElementById("dz").onclick=()=>run(shuf(list.filter(w=>w.a)).map(w=>synD(w,1)),lbl+" · zıt anlam");
+  document.getElementById("dk").onclick=()=>{vmode="kart";vfilter=gview==="gun"?"g"+gday:"t"+ggrp+"~"+gset;kelime()};
 }
 function taktik(){setTimeout(()=>app.insertAdjacentHTML("beforeend",FOOT));app.innerHTML=`<h1>Taktik</h1><a class="card plancard" href="#hedef" style="text-decoration:none;color:inherit;display:block"><h3 style="margin:0">Hedefim ve planım →</h3><p class="small" style="margin:.3em 0 0">Hedef puana göre dönem planı, günlük program, video ders ve tekrar tavsiyeleri.</p></a><a class="card xhero" href="#yapi" style="text-decoration:none;color:inherit;display:block"><h3 style="margin:0">Soru tiplerine göre ders notları →</h3><p class="small" style="margin:.3em 0 0">80 sorunun dağılımı; her tip için çözüm adımları, tuzaklar, çözümlü örnek ve alıştırmalar.</p></a><div class="lesson">${EX.taktik||""}</div>`}
 let cg="all",cs="";
@@ -1038,10 +1073,11 @@ function gramer(sub){
   <div class="grid"><a class="card btn" href="#gramer-tekrar" style="text-decoration:none"><h3>Hızlı tekrar tabloları ve şemalar</h3><span class="chip k">Tüm konular tek sayfada</span><p class="mut small">12 zaman (aktif/pasif), modal ve yarı modallar, koşul, cümlecikler, -ing/to, quantifier, karşılaştırma, devrik yapı</p></a><a class="card btn" href="#gramer-kalip" style="text-decoration:none"><h3>Edat kalıpları ve phrasal verb'ler</h3><span class="chip">Her sınavda 2–4 soru</span><p class="mut small">${D.coll.length||"…"} kalıp, tablo ve test</p></a>${L.map(l=>`<a class="card btn" href="#gramer-${l.id}" style="text-decoration:none"><h3>${l.t}</h3><span class="chip">${l.freq||""}</span>${(()=>{const c=catOf({id:"g-"+l.id+"-0"}),e=(S.st||{})[c];return e&&e.n>=5&&e.c/e.n<.75?` <span class="chip" style="color:var(--bad);border-color:var(--bad)">Zorlanıyorsun · %${Math.round(e.c/e.n*100)}</span>`:""})()}<p class="mut small">${(l.fill||[]).length+(l.err||[]).length+l.qs.length} alıştırma${S.best["g-"+l.id]!=null?" · en iyi "+S.best["g-"+l.id]+"/"+l.qs.length:""}</p></a>`).join("")}</div>`;
 }
 
+const LVN={1:"Seviye 1",2:"Seviye 2",3:"Seviye 3"};
 function okuma(sub){
   if(sub){const r=R.find(x=>x.id===sub);if(r){
     const G=glossify(r),cnt={};G.list.forEach(g=>cnt[g.p]=(cnt[g.p]||0)+1);
-    app.innerHTML=`<button class="back" onclick="location.hash='okuma'">← Okuma</button><span class="chip">${r.f}</span><h1>${r.t}</h1>
+    app.innerHTML=`<button class="back" onclick="location.hash='okuma'">← Okuma</button><span class="chip">${r.f}</span> <span class="chip lv${r.lv}">${LVN[r.lv]}</span><h1>${r.t}</h1>${r.src?`<p class="small mut">${r.src}</p>`:""}
     <p class="small mut">Renkli altı çizili ${G.list.length} kelimeye dokun: türü ve anlamı görünür.</p>
     <p class="legend">${Object.entries(POSTR).filter(([k])=>cnt[k]).map(([k,v])=>`<span class="gl p-${k}" style="cursor:default">${v} · ${cnt[k]}</span>`).join(" ")}</p>
     <p class="text">${G.html}</p>
@@ -1054,8 +1090,9 @@ function okuma(sub){
     document.getElementById("rk").onclick=()=>{const qs=shuf(G.list).slice(0,10).map(g=>{const pool=shuf(G.list.filter(x=>x!==g&&x.t!==g.t)).slice(0,4).map(x=>x.t),o=shuf([...pool,g.t]);
       return{id:"rk-"+r.id+"-"+g.f,stem:`<b style="font-size:22px">${g.f}</b> <span class="mut">(${POSTR[g.p]||g.p})</span><br>Metindeki anlamı hangisidir?`,o,a:o.indexOf(g.t),ex:`<b>${g.f}</b> (${g.lem}, ${POSTR[g.p]||g.p}) = ${g.t}`,tag:"Okuma kelimeleri",tr:""}});run(qs,r.t+" · kelimeler")};
     document.getElementById("rt").onclick=()=>run(r.qs.map((q,i)=>Q[r.id+"-"+i]),r.t,r.id);return}}
-  app.innerHTML=`<h1>Okuma</h1><p class="mut">ÖSYM'nin metin aldığı dergi ve ansiklopedilerin üslubunda yazılmış ${R.length} özgün metin: psikoloji, tıp, sosyoloji, kent, bilim tarihi, ekonomi, teknoloji ve risk, arkeoloji, tarih, doğa. Her birinde 5 YDS tipi soru ve tam Türkçe çeviri var.</p>
-  <h2>Özgün metinler</h2><div class="grid">${R.map(r=>`<a class="card btn" href="#okuma-${r.id}" style="text-decoration:none"><span class="chip">${r.f}</span><h3 style="margin-top:8px">${r.t}</h3><p class="mut small">${r.x.split(" ").length} kelime${S.best[r.id]!=null?" · en iyi "+S.best[r.id]+"/5":""}</p></a>`).join("")}</div>${srcHtml()}`;
+  app.innerHTML=`<h1>Okuma</h1><p class="mut">${R.length} metin, üç seviyede: psikoloji, tıp, kent, bilim tarihi, ekonomi, kazalar ve risk, arkeoloji, dilbilim, uzay, okyanus. Her metinde YDS tipi sorular, dokununca anlamı görünen kelimeler ve tam Türkçe çeviri var.</p>
+  <div class="card plancard"><h3 style="margin:0">4 aylık kademeli okuma</h3><p class="small" style="margin:.4em 0 0"><b>1. ay:</b> Seviye 1 metinler, süre tutmadan; her kelimeye bak. <b>2. ay:</b> Seviye 2, metin başına 12 dakika. <b>3. ay:</b> Seviye 3, 10 dakika; önce soruları oku. <b>4. ay:</b> Karışık seviye ve geçmiş ÖSYM sınavları, 9 dakika. Bir metni 4 soruda 3+ doğruyla bitirince bir üst seviyeye geç.</p></div>
+  ${[1,2,3].map(lv=>{const rs=R.filter(r=>r.lv===lv);return rs.length?`<h2><span class="chip lv${lv}">${LVN[lv]}</span> ${["","Orta · ısınma","Orta-üst · sınav düzeyi","İleri · Kasım 2026 ayarı, soyut ve uzun"][lv]}</h2><div class="grid">${rs.map(r=>`<a class="card btn" href="#okuma-${r.id}" style="text-decoration:none"><span class="chip">${r.f}</span>${r.src&&r.src.startsWith("Olgular")?` <span class="chip">kamu malı kaynak</span>`:""}<h3 style="margin-top:8px">${r.t}</h3><p class="mut small">${r.x.split(" ").length} kelime · ${r.qs.length} soru${S.best[r.id]!=null?" · en iyi "+S.best[r.id]+"/"+r.qs.length:""}</p></a>`).join("")}</div>`:""}).join("")}${srcHtml()}`;
 }
 
 function srcHtml(){
@@ -1122,6 +1159,9 @@ const RM=()=>matchMedia("(prefers-reduced-motion: reduce)").matches;
 function sparkle(el){if(RM()||!el)return;const r=el.getBoundingClientRect(),cx=r.left+Math.min(60,r.width/2),cy=r.top+r.height/2;
   for(let i=0;i<12;i++){const s=document.createElement("span");s.className="spark";s.textContent=i%3?"✦":"✧";const a=Math.PI*2*i/12,d=40+Math.random()*40;
     s.style.left=cx+"px";s.style.top=cy+"px";s.style.setProperty("--dx",Math.cos(a)*d+"px");s.style.setProperty("--dy",Math.sin(a)*d+"px");document.body.appendChild(s);setTimeout(()=>s.remove(),900)}}
+function zap(el){if(!el)return;el.classList.remove("zapd");void el.offsetWidth;el.classList.add("zapd");if(RM())return;const r=el.getBoundingClientRect(),cx=r.right-34,cy=r.top+r.height/2;
+  const b=document.createElement("span");b.className="zapb";b.textContent="⚡";b.style.left=cx+"px";b.style.top=cy+"px";document.body.appendChild(b);setTimeout(()=>b.remove(),900);
+  for(let i=0;i<6;i++){const s=document.createElement("span");s.className="spark zx";s.textContent="✕";const a=Math.PI*2*i/6+.3,d=26+Math.random()*24;s.style.left=cx+"px";s.style.top=cy+"px";s.style.setProperty("--dx",Math.cos(a)*d+"px");s.style.setProperty("--dy",Math.sin(a)*d+"px");document.body.appendChild(s);setTimeout(()=>s.remove(),800)}}
 function confetti(){if(RM())return;const cols=["#2340c8","#b79cff","#127a46","#c4302b","#0e7c86"];
   for(let i=0;i<70;i++){const c=document.createElement("i");c.className="confetti";c.style.left=Math.random()*100+"vw";c.style.background=cols[i%cols.length];
     c.style.setProperty("--t",(1.8+Math.random()*1.6)+"s");c.style.setProperty("--r",(Math.random()*900-450)+"deg");c.style.animationDelay=Math.random()*.4+"s";document.body.appendChild(c);setTimeout(()=>c.remove(),3800)}}
@@ -1213,7 +1253,7 @@ function run(qs,title,bestKey,secs,pq){
       if(picked!==null)return;clearInterval(qt);picked=j;times.push(Math.round((Date.now()-t0)/1000));const ok=j===q.a;
       if(ok){score++;delete S.wrong[q.id];S.ok[q.id]=1}else{wrong.push(q);S.wrong[q.id]=1;if(j<0)blank++}track(q,ok);save();
       app.querySelectorAll(".pick").forEach(x=>{const k=+x.dataset.j;if(k===q.a)x.classList.add("ok");else if(k===j)x.classList.add("bad");x.disabled=true});
-      if(ok)sparkle(app.querySelector(".pick.ok"));
+      if(ok)sparkle(app.querySelector(".pick.ok"));else zap(app.querySelector(".pick.bad")||app.querySelector(".pick.ok"));
       document.getElementById("fb").innerHTML=fbHtml(q,j)+`<p><button class="pri" id="nx">${i+1<qs.length?"Sonraki soru":"Sonucu gör"}</button></p>`;
       const nx=document.getElementById("nx");nx.onclick=()=>{i++;show();scrollTo(0,0)};if(pq)nx.focus({preventScroll:true});
     };
@@ -1396,7 +1436,7 @@ function edatAvcisi(mode){
     app.querySelector("#ebody").innerHTML=`<div class="card pop eacard"><span class="chip">${w.k==="v"?"fiil + edat":"isim + edat"}</span><p class="eaw">${word} <span class="gblank">___</span></p><p class="mut" style="margin:0 0 12px">${w.t}</p><div class="eaopts">${opts.map(o=>`<button class="tile" data-o="${o}">${o}</button>`).join("")}</div><p id="efb" class="small" style="min-height:1.4em;margin:.6em 0 0"></p></div>`;
     app.querySelectorAll(".eaopts .tile").forEach(b=>b.onclick=()=>{if(lock)return;lock=true;const good=b.dataset.o===w.p;track({id:"ea-"+w.w+"-"+w.p},good);
       if(good){combo++;const pts=1+Math.floor(combo/3);score+=pts;left=Math.min(60,left+1);hit.push(w);b.classList.add("ok");sparkle(b);document.getElementById("efb").innerHTML=`<b style="color:var(--ok)">+${pts}</b> ${w.w.replace(/\s*\(.*?\)/,"")} <b>${w.p}</b>`;setTimeout(round,450)}
-      else{combo=0;left=Math.max(0,left-3);miss.push(w);b.classList.add("no");app.querySelector(`.eaopts [data-o="${w.p}"]`).classList.add("ok");document.getElementById("efb").innerHTML=`<b style="color:var(--bad)">−3 sn</b> · doğrusu: <b>${w.w.replace(/\s*\(.*?\)/,"")} ${w.p}</b> (${w.t})`;setTimeout(round,1400)}
+      else{combo=0;left=Math.max(0,left-3);miss.push(w);b.classList.add("no");zap(b);app.querySelector(`.eaopts [data-o="${w.p}"]`).classList.add("ok");document.getElementById("efb").innerHTML=`<b style="color:var(--bad)">−3 sn</b> · doğrusu: <b>${w.w.replace(/\s*\(.*?\)/,"")} ${w.p}</b> (${w.t})`;setTimeout(round,1400)}
       document.getElementById("esc").textContent=score;const cb=document.getElementById("ecb");cb.style.display=combo<2?"none":"inline-block";cb.textContent=`x${1+Math.floor(combo/3)} · seri ${combo}`})};
   app.innerHTML=head()+`<div id="ebody"></div>`;document.getElementById("eq").onclick=quit;round();
   tmr=setInterval(()=>{left--;const t=document.getElementById("et");if(!t){clearInterval(tmr);return}t.textContent=Math.max(0,left);document.getElementById("etb").style.width=Math.max(0,left/60*100)+"%";
@@ -1422,7 +1462,7 @@ function esAnlam(){
     <div class="card pop eacard"><span class="chip">eş anlamlısı hangisi?</span><p class="eaw">${w.w} <span class="mut" style="font-size:16px">(${w.p})</span></p><div class="eaopts g2">${opts.map(o=>`<button class="tile" data-o="${o.replace(/"/g,"")}">${o}</button>`).join("")}</div><p id="sfb" class="small" style="min-height:2.6em;margin:.6em 0 0"></p></div>`;
     document.getElementById("sq").onclick=quit;
     const fin=(o,b)=>{if(done)return;done=true;clearInterval(qt2);const good=o===ans.replace(/"/g,"");track({id:"s-"+w.w},good);log.push([w,good]);
-      if(good){right++;score+=1+t;b.classList.add("ok");sparkle(b)}else{if(b)b.classList.add("no");const c=app.querySelector(`.eaopts [data-o="${ans.replace(/"/g,"")}"]`);if(c)c.classList.add("ok")}
+      if(good){right++;score+=1+t;b.classList.add("ok");sparkle(b)}else{if(b){b.classList.add("no");zap(b)}const c=app.querySelector(`.eaopts [data-o="${ans.replace(/"/g,"")}"]`);if(c)c.classList.add("ok")}
       document.getElementById("sfb").innerHTML=`${good?`<b style="color:var(--ok)">+${1+t}</b> `:`<b style="color:var(--bad)">${b?"Yanlış":"Süre doldu"}</b> · `}<b>${w.w}</b>: ${w.t}<br><span class="mut">eş: ${w.s}${w.a?` · zıt: ${w.a}`:""}</span>`;
       i++;setTimeout(round,good?900:2000)};
     app.querySelectorAll(".eaopts .tile").forEach(b=>b.onclick=()=>fin(b.dataset.o,b));
@@ -1437,6 +1477,7 @@ function esAnlam(){
 
 /* ===================== SINAV YAPISI ===================== */
 const X4=window.EXTRA4||{dag:[],tip:{}};
+X4.dag.forEach(r=>{const add={diyalog:"diyalog2",paragraf:"paragraf2",bozan:"bozan2"}[r[0]];if(add)r[5].push(add)});
 function dagAcc(row){let c=0,n=0;const cats=row[4].includes("__gram")?[...row[4],...L.map(l=>l.t)]:row[4];cats.forEach(k=>{const e=(S.st||{})[k];if(e){c+=e.c;n+=e.n}});return n?[Math.round(c/n*100),n]:null}
 function yapi(sub){
   if(sub){const r=X4.dag.find(x=>x[0]===sub);if(r)return yapiDers(r)}
@@ -1552,7 +1593,7 @@ const FOOT=`<footer class="foot">YDS Pusula · © 2026 <a href="https://github.c
 function route(){
   GID++;clearInterval(timer);clearInterval(qt);clearInterval(cdT);tip.hidden=true;document.onkeydown=null;document.querySelectorAll(".sheet,.spark,.confetti").forEach(x=>x.remove());
   const h=(location.hash||"#bugun").slice(1),[v,s]=[h.split("-")[0],h.split("-").slice(1).join("-")];
-  nav(NAMES[v]?v:"bugun");
+  nav(NAMES[v]?v:"bugun");document.body.dataset.sec=({oyun:"kelime",ekstra:"deneme",yapi:"taktik",hedef:"bugun",ilerleme:"bugun"})[v]||(NAMES[v]?v:"bugun");
   if(v==='oyun')nav('kelime');
   if(v==='ekstra')nav('deneme');
   if(v==='yapi')nav('taktik');
