@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>YDS Pusula · YDS çalışma planı</title>
+<title>YDS Çalışma</title>
 <style>
 @font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -145,12 +145,20 @@ nav.tabs a.on::after{content:"";position:absolute;left:22%;right:22%;bottom:6px;
 
 
 /* ---- bölüm renkleri (yumuşak), doğru/yanlış efektleri ---- */
-body[data-sec=bugun]{--hl:light-dark(#e6dbff,#4b3a7d);--hl2:light-dark(#a98bf0,#9a80e6)}
-body[data-sec=kelime]{--hl:light-dark(#d9e9fb,#2c4a6e);--hl2:light-dark(#7fb0e6,#7aa9de)}
-body[data-sec=gramer]{--hl:light-dark(#d7f0e6,#24584a);--hl2:light-dark(#6cc3a2,#66b89a)}
-body[data-sec=okuma]{--hl:light-dark(#fde6d4,#6a4430);--hl2:light-dark(#eea676,#e0a07a)}
-body[data-sec=deneme]{--hl:light-dark(#f7dce6,#683246);--hl2:light-dark(#e391ad,#d98aa6)}
-body[data-sec=taktik]{--hl:light-dark(#f3ecc8,#5b5124);--hl2:light-dark(#d3bd5c,#c9b45a)}
+body[data-sec=bugun]{--hl:light-dark(#e6dbff,#4b3a7d);--hl2:light-dark(#a98bf0,#9a80e6);--pen:light-dark(#5b3fc4,#b9a6ff);--tint:light-dark(#f7f3ff,#17131f)}
+body[data-sec=kelime]{--hl:light-dark(#d9e9fb,#2c4a6e);--hl2:light-dark(#7fb0e6,#7aa9de);--pen:light-dark(#2a6bb8,#8fc0f5);--tint:light-dark(#f2f7fd,#11161d)}
+body[data-sec=gramer]{--hl:light-dark(#d7f0e6,#24584a);--hl2:light-dark(#6cc3a2,#66b89a);--pen:light-dark(#1d7f60,#7fd6b4);--tint:light-dark(#f1faf6,#10191a)}
+body[data-sec=okuma]{--hl:light-dark(#fde6d4,#6a4430);--hl2:light-dark(#eea676,#e0a07a);--pen:light-dark(#b5582a,#f3b089);--tint:light-dark(#fdf6f0,#1b1512)}
+body[data-sec=deneme]{--hl:light-dark(#f7dce6,#683246);--hl2:light-dark(#e391ad,#d98aa6);--pen:light-dark(#b13d66,#f1a0bd);--tint:light-dark(#fdf3f6,#1b1216)}
+body[data-sec=taktik]{--hl:light-dark(#f3ecc8,#5b5124);--hl2:light-dark(#d3bd5c,#c9b45a);--pen:light-dark(#8a6d0e,#e4cf74);--tint:light-dark(#fcfaf0,#191710)}
+body[data-sec]{--card:color-mix(in srgb,var(--hl) 22%,light-dark(#f6f7f9,#191c23));background:linear-gradient(180deg,var(--tint) 0,var(--bg) 420px) no-repeat,var(--bg);transition:background-color .3s}
+body[data-sec] .card,body[data-sec] .dcard{border-color:color-mix(in srgb,var(--hl2) 35%,var(--line))}
+body[data-sec] nav.tabs{border-top-color:color-mix(in srgb,var(--hl2) 40%,var(--line))}
+body[data-sec] .chip{border-color:color-mix(in srgb,var(--hl2) 45%,var(--line))}
+body[data-sec] .fill{background:var(--hl2)}
+body[data-sec] .card.btn,body[data-sec] a.card{background:var(--card)}
+body[data-sec] .card.btn:hover{border-color:var(--hl2)}
+body[data-sec] .gtimer i,body[data-sec] .prog i{background:var(--pen)}
 nav.tabs a.on svg{color:var(--hl2)}nav.tabs a.on::after{background:var(--hl2)}
 .chip.lv1{background:light-dark(#d7f0e6,#24584a);border-color:transparent}.chip.lv2{background:light-dark(#d9e9fb,#2c4a6e);border-color:transparent}.chip.lv3{background:light-dark(#f7dce6,#683246);border-color:transparent}
 .pick.ok{box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 25%,transparent),0 0 18px color-mix(in srgb,var(--ok) 35%,transparent)}
@@ -924,7 +932,7 @@ function home(){
   const learned=allWords().filter(w=>(S.box[w.w]||0)>=3).length,total=W.length+DW.length+MW.length,wc=Object.keys(S.wrong).length;
   const P=progressData();
   const PL=S.plan;
-  app.innerHTML=`<h1>YDS Pusula</h1>
+  app.innerHTML=`<h1>YDS Çalışma</h1>
   <p class="mut">Kelime, dil bilgisi, okuma ve sınav formatında testler; her soruda Türkçe çeviri ve yanlış şıkların açıklaması. İlerlemen yalnızca bu tarayıcıda saklanır.</p>
   <a class="card hero" href="#ilerleme" style="text-decoration:none;color:inherit"><div><p class="small mut" style="margin:0">YDS/1'e kalan süre</p>${cdHtml()}<p class="small" style="margin:.4em 0 0">80 soru · 180 dakika · yanlış doğruyu götürmez. ${PL?`Hedefin ${PL.target}: ${Math.ceil(PL.target/1.25)} doğru yeter.`:"80 puan için 64 doğru yeter."}</p></div>
   <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center">${ring(P.overall)}<div class="bars">${P.cats.slice(0,4).map(c=>barRow(c[0],c[1],c[2])).join("")}<p class="small" style="margin:6px 0 0;color:var(--pen);font-weight:600">Ayrıntılı ilerleme →</p></div></div></a>
@@ -1588,7 +1596,7 @@ function renderPlan(){
   <p class="small mut">Puan hesabı: YDS'de her doğru 1,25 puan; yanlış doğruyu götürmez. Sınav tarihlerini her zaman ÖSYM'nin sitesinden kontrol et.</p>`;
 }
 
-const FOOT=`<footer class="foot">YDS Pusula · © 2026 <a href="https://github.com/kubrakav/yds-study" target="_blank" rel="noopener">kubrakav</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> · ücretsiz kullanılabilir, ticari kullanım ve değiştirilmiş kopyalar yasaktır · veri toplanmaz, ilerlemen yalnızca bu tarayıcıda saklanır</footer>`;
+const FOOT=`<footer class="foot">YDS Çalışma · © 2026 <a href="https://github.com/kubrakav/yds-study" target="_blank" rel="noopener">kubrakav</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> · ücretsiz kullanılabilir, ticari kullanım ve değiştirilmiş kopyalar yasaktır · veri toplanmaz, ilerlemen yalnızca bu tarayıcıda saklanır</footer>`;
 /* ===================== ROUTER ===================== */
 function route(){
   GID++;clearInterval(timer);clearInterval(qt);clearInterval(cdT);tip.hidden=true;document.onkeydown=null;document.querySelectorAll(".sheet,.spark,.confetti").forEach(x=>x.remove());
