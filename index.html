@@ -3,9 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>YDS Çalışma Kiti</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<title>YDS Pusula · YDS çalışma planı</title>
+<style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/archivo-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/archivo-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/archivo-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/archivo-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/archivo-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-serif-4-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/source-serif-4-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-serif-4-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/source-serif-4-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
 <style>
 /* VOICE: calm study companion, direct and encouraging, Turkish UI with English material
    IDEA: the exam booklet she marked with a yellow highlighter — answers, notes, margins
@@ -131,6 +141,23 @@ nav.tabs a.on::after{content:"";position:absolute;left:22%;right:22%;bottom:6px;
 .mbtn.done{opacity:0;pointer-events:none;transition:opacity .4s}
 .mbtn.no{border-color:var(--bad)}
 .gtimer{height:8px;border-radius:4px;background:var(--line);overflow:hidden}.gtimer i{display:block;height:100%;background:var(--pen);transition:width 1s linear}
+
+
+/* ---- hedef ve plan ---- */
+.plancard{display:block;border:2px solid var(--pen);background:linear-gradient(135deg,color-mix(in srgb,var(--pen) 10%,var(--card)),var(--card))}
+.pform{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:12px}
+.pform label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--mut)}.pform label[hidden]{display:none}
+.pform select,.pform input{min-height:42px;padding:6px 10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-size:16px}
+.pstat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;text-align:center}
+.pstat b{display:block;font:800 30px/1.1 Archivo,sans-serif;color:var(--pen)}.pstat span{font-size:12px;color:var(--mut)}
+@media(max-width:520px){.pstat{grid-template-columns:1fr 1fr}}
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.ph{border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--card)}
+.ph.on{border:2px solid var(--hl2);background:color-mix(in srgb,var(--hl) 40%,var(--card))}.ph span{font-size:13px;color:var(--mut)}.ph small{font-size:13px}
+.dplan{display:grid;gap:6px}.dplan a{display:grid;grid-template-columns:64px minmax(0,1fr) 14px;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:inherit;text-decoration:none}
+.dplan .dm{font:800 17px Archivo,sans-serif;color:var(--pen)}.dplan small{display:block;font-size:13px;color:var(--mut)}
+ul.wk li{margin:.35em 0}.sbox a{color:var(--pen);font-weight:600}
+.foot{margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--mut);line-height:1.5}.foot a{color:inherit}
 
 /* ---- soru dağılımı, adım listeleri, SVO ---- */
 .dag{display:grid;gap:6px;margin:14px 0}
@@ -871,10 +898,12 @@ function ilerleme(){
 function home(){
   const learned=allWords().filter(w=>(S.box[w.w]||0)>=3).length,total=W.length+DW.length+MW.length,wc=Object.keys(S.wrong).length;
   const P=progressData();
-  app.innerHTML=`<h1>YDS'de 80+ için çalışma kiti</h1>
+  const PL=S.plan;
+  app.innerHTML=`<h1>YDS Pusula</h1>
   <p class="mut">Kelime, dil bilgisi, okuma ve sınav formatında testler; her soruda Türkçe çeviri ve yanlış şıkların açıklaması. İlerlemen yalnızca bu tarayıcıda saklanır.</p>
-  <a class="card hero" href="#ilerleme" style="text-decoration:none;color:inherit"><div><p class="small mut" style="margin:0">YDS/1'e kalan süre</p>${cdHtml()}<p class="small" style="margin:.4em 0 0">80 soru · 180 dakika · yanlış doğruyu götürmez. 80 puan için 64 doğru yeter.</p></div>
+  <a class="card hero" href="#ilerleme" style="text-decoration:none;color:inherit"><div><p class="small mut" style="margin:0">YDS/1'e kalan süre</p>${cdHtml()}<p class="small" style="margin:.4em 0 0">80 soru · 180 dakika · yanlış doğruyu götürmez. ${PL?`Hedefin ${PL.target}: ${Math.ceil(PL.target/1.25)} doğru yeter.`:"80 puan için 64 doğru yeter."}</p></div>
   <div style="display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center">${ring(P.overall)}<div class="bars">${P.cats.slice(0,4).map(c=>barRow(c[0],c[1],c[2])).join("")}<p class="small" style="margin:6px 0 0;color:var(--pen);font-weight:600">Ayrıntılı ilerleme →</p></div></div></a>
+  ${PL?`<a class="card plancard" href="#hedef" style="text-decoration:none;color:inherit"><div class="row" style="justify-content:space-between"><h3 style="margin:0">Planın · hedef ${PL.target}</h3><span class="small" style="color:var(--pen);font-weight:600">Planı aç →</span></div><p class="small" style="margin:.4em 0 0">Bugün ${PL.mins} dakika: ${dailyPlan(PL,curPhase(planCalc(PL))).map(x=>x[0]+" "+x[1]+" dk").join(" · ")}</p></a>`:`<a class="card plancard" href="#hedef" style="text-decoration:none;color:inherit"><h3 style="margin:0">Hedefini belirle 🎯</h3><p class="small" style="margin:.4em 0 0">Hedef puanını, sınav tarihini ve günlük süreni seç; sana özel dönem planı, bölüm bölüm hedef doğru sayısı ve günlük program çıksın.</p></a>`}
   ${goalHtml()}
   <a class="card xhero" href="#yapi" style="text-decoration:none;color:inherit"><span class="chip">80 soru</span><h3 style="margin:.3em 0">YDS soru dağılımı ve soru tipi dersleri</h3><p class="small" style="margin:0">Kelime 6 · Gramer 10 · Cloze 10 · Cümle tamamlama 10 · Çeviri 6 · Okuma 20 · Diyalog 5 · Yakın anlam 4 · Paragraf tamamlama 4 · Akışı bozan 5</p><p class="small" style="margin:.5em 0 0;color:var(--pen);font-weight:600">Tabloyu aç →</p></a>
   <a class="card xhero" href="#ekstra" style="text-decoration:none;color:inherit"><span class="chip k">Yeni</span><h3 style="margin:.3em 0">Ekstra sorular ve alıştırmalar</h3><p class="small" style="margin:0">${Object.values(Y).filter(s=>s.x3).reduce((n,s)=>n+s.qs.length,0)} yeni YDS sorusu · ${X3.pw.length} Metin Dedektifi · ${VP.length+NP.length} edat kalıbıyla Edat Avcısı · kaynak rehberi</p><p class="small" style="margin:.5em 0 0;color:var(--pen);font-weight:600">Listeyi aç →</p></a>
@@ -889,6 +918,7 @@ function home(){
   </div>
   <h2>Sınav ritmi · süreli 5 şıklı</h2>${ritimHtml()}
   ${wc?`<div class="card row"><span><b>${wc}</b> soru “Yanlışlarım” listende</span><button id="gowrong">Yanlışları tekrar et</button></div>`:""}`;
+  app.insertAdjacentHTML("beforeend",FOOT);
   bindR();startCd();bindGoal();
   const g=document.getElementById("gowrong");if(g)g.onclick=()=>run(Object.keys(S.wrong).map(regen).filter(Boolean),"Yanlışlarım");
 }
@@ -962,7 +992,7 @@ function gunluk(body){
   document.getElementById("dz").onclick=()=>run(shuf(list.filter(w=>w.a)).map(w=>synD(w,1)),gday+". gün · zıt anlam");
   document.getElementById("dk").onclick=()=>{vmode="kart";vfilter="g"+gday;kelime()};
 }
-function taktik(){app.innerHTML=`<h1>Taktik</h1><a class="card xhero" href="#yapi" style="text-decoration:none;color:inherit;display:block"><h3 style="margin:0">Soru tiplerine göre ders notları →</h3><p class="small" style="margin:.3em 0 0">80 sorunun dağılımı; her tip için çözüm adımları, tuzaklar, çözümlü örnek ve alıştırmalar.</p></a><div class="lesson">${EX.taktik||""}</div>`}
+function taktik(){setTimeout(()=>app.insertAdjacentHTML("beforeend",FOOT));app.innerHTML=`<h1>Taktik</h1><a class="card plancard" href="#hedef" style="text-decoration:none;color:inherit;display:block"><h3 style="margin:0">Hedefim ve planım →</h3><p class="small" style="margin:.3em 0 0">Hedef puana göre dönem planı, günlük program, video ders ve tekrar tavsiyeleri.</p></a><a class="card xhero" href="#yapi" style="text-decoration:none;color:inherit;display:block"><h3 style="margin:0">Soru tiplerine göre ders notları →</h3><p class="small" style="margin:.3em 0 0">80 sorunun dağılımı; her tip için çözüm adımları, tuzaklar, çözümlü örnek ve alıştırmalar.</p></a><div class="lesson">${EX.taktik||""}</div>`}
 let cg="all",cs="";
 function kalip(){
   const groups=[...new Set(D.coll.map(c=>c[2]))];
@@ -1443,6 +1473,81 @@ function irrQuiz(){
   run(qs,"Düzensiz fiil hızlı testi","g-fiil-iv",null,20);
 }
 
+/* ===================== HEDEF VE PLAN ===================== */
+const PTYPES=[["diyalog","Diyalog",5,.95],["yakin","Yakın anlam",4,.9],["kelime","Kelime",6,.9],["gramer","Gramer",10,.9],["cumle","Cümle tamamlama",10,.9],["ceviri","Çeviri",6,.9],["paragraf","Paragraf tamamlama",4,.85],["bozan","Akışı bozan",5,.85],["cloze","Cloze test",10,.85],["okuma","Okuma",20,.85]];
+const EXAMS=[["2027-03-28T10:15","YDS/1 · 28 Mart 2027"],["2027-07-04T10:15","YDS/2 (tahmini, temmuz 2027) · tarihi ÖSYM'den kontrol et"],["custom","Başka tarih (e-YDS vb.)"]];
+function planCalc(p){
+  const need=Math.min(80,Math.ceil(p.target/1.25)),days=Math.max(1,Math.ceil((new Date(p.date)-new Date())/864e5)),weeks=Math.max(1,Math.round(days/7));
+  // kolay puanlar önce: her tipe sırayla birer doğru ekle, tavanı aşmadan
+  const t={};PTYPES.forEach(x=>t[x[0]]=0);let left=need,guard=0;
+  while(left>0&&guard++<500){let moved=false;for(const x of PTYPES){if(left<=0)break;if(t[x[0]]<Math.floor(x[2]*x[3])){t[x[0]]++;left--;moved=true}}if(!moved)break}
+  if(left>0)PTYPES.forEach(x=>{while(left>0&&t[x[0]]<x[2]){t[x[0]]++;left--}});
+  const gap=p.level?p.target-p.level:null;
+  const f1=Math.max(1,Math.round(weeks*.4)),f2=Math.max(1,Math.round(weeks*.35)),f3=Math.max(1,weeks-f1-f2);
+  const add=d=>{const x=new Date();x.setDate(x.getDate()+d*7);return x.toLocaleDateString("tr-TR",{day:"numeric",month:"long"})};
+  const phases=[["1 · Temel",`Bugün – ${add(f1)}`,f1],["2 · Soru tipleri",`${add(f1)} – ${add(f1+f2)}`,f2],["3 · Deneme ve tekrar",`${add(f1+f2)} – sınav`,f3]];
+  const cur=(()=>{const w=weeks;const done=weeks- Math.round(days/7);return 0})();
+  const band=p.target>=80?"yuksek":p.target>=65?"orta":"temel";
+  const perDay=Math.round(p.mins*(p.days)/7);
+  return{need,days,weeks,t,gap,phases,band,perDay}}
+function dailyPlan(p,phase){
+  const m=p.mins,sp=(a)=>a.map(([k,w,txt,href])=>[k,Math.max(5,Math.round(m*w/5)*5),txt,href]);
+  const P={
+   1:[["Kelime",.3,"Kelime günlüğünden 10–20 kelime + bir oyun turu","#kelime"],["Gramer",.4,"Sıradaki gramer ünitesi: önce şema ve ders notu, sonra alıştırmalar","#gramer"],["Okuma",.2,"Bir okuma metni; bilmediğin kelimelere dokun","#okuma"],["Tekrar",.1,"Yanlışlarım listesi ya da dünkü kelimeler","#deneme"]],
+   2:[["Kelime",.2,"Kelime testi ya da Eş Anlam Düellosu","#oyun"],["Soru tipi",.4,"Soru dağılımından bir tip: ders notu + set","#yapi"],["Okuma",.25,"Bir metin, süre tutarak (10 dk)","#okuma"],["Tekrar",.15,"Zayıf konu testi ve Yanlışlarım","#ilerleme"]],
+   3:[["Deneme",.5,"30 soruluk deneme ya da geçmiş sınavdan bir bölüm","#deneme"],["Analiz",.2,"Yanlışlarının konusuna dön, ders notunu oku","#ilerleme"],["Kelime",.15,"Sık kelimeler setlerinden tekrar","#kelime"],["Okuma",.15,"Bir metin, hızlı okuma","#okuma"]]};
+  return sp(P[phase])}
+function curPhase(c){const w=c.weeks,el=Math.max(0,w-Math.ceil(c.days/7));const a=c.phases[0][2],b=c.phases[1][2];const passed=(planStart()?Math.floor((new Date()-new Date(planStart()))/6048e5):0);return passed<a?1:passed<a+b?2:3}
+function planStart(){return (S.plan||{}).start}
+function hedef(){
+  const p=S.plan||{target:70,date:S.exam||EXAMS[0][0],mins:60,level:"",days:6};
+  const isCustom=!EXAMS.some(e=>e[0]===p.date);
+  app.innerHTML=`<button class="back" onclick="location.hash='bugun'">← Bugün</button><h1>Hedefim ve planım</h1>
+  <p class="mut">Hedef puanını, sınav tarihini ve günlük ayırabileceğin süreyi seç. Plan; kaç doğru gerektiğini, hangi soru tiplerinden puan toplaman gerektiğini, haftalık ve günlük programı buna göre değiştirir.</p>
+  <div class="card"><div class="pform">
+   <label>Hedef puan<select id="pt">${[50,55,60,65,70,75,80,85,90,95].map(v=>`<option ${v==p.target?"selected":""}>${v}</option>`).join("")}</select></label>
+   <label>Sınav<select id="pe">${EXAMS.map(e=>`<option value="${e[0]}" ${(e[0]===p.date||(isCustom&&e[0]==="custom"))?"selected":""}>${e[1]}</option>`).join("")}</select></label>
+   <label id="pcw" ${isCustom?"":"hidden"}>Sınav tarihi<input type="date" id="pc" value="${isCustom?p.date.slice(0,10):""}"></label>
+   <label>Günlük süre<select id="pm">${[30,45,60,90,120,180].map(v=>`<option value="${v}" ${v==p.mins?"selected":""}>${v} dakika</option>`).join("")}</select></label>
+   <label>Haftada kaç gün<select id="pd">${[4,5,6,7].map(v=>`<option ${v==p.days?"selected":""}>${v}</option>`).join("")}</select></label>
+   <label>Son puanın (varsa)<input type="number" id="pl" min="0" max="100" placeholder="ör. 52" value="${p.level||""}"></label>
+  </div><button class="pri" id="psv">${S.plan?"Planı güncelle":"Planımı oluştur"}</button></div>
+  <div id="pout"></div>`;
+  const pe=document.getElementById("pe");pe.onchange=()=>{document.getElementById("pcw").hidden=pe.value!=="custom"};
+  document.getElementById("psv").onclick=()=>{const v=id=>document.getElementById(id).value;let date=v("pe");if(date==="custom"){if(!v("pc")){alert2("Sınav tarihini seç.");return}date=v("pc")+"T10:15"}
+    const old=S.plan||{};S.plan={target:+v("pt"),date,mins:+v("pm"),days:+v("pd"),level:v("pl")?+v("pl"):"",start:old.start&&old.date===date?old.start:new Date().toISOString().slice(0,10)};
+    S.exam=date;S.goal=[20,30,40,60,80,100].reduce((a,b)=>Math.abs(b-S.plan.mins*.7)<Math.abs(a-S.plan.mins*.7)?b:a);save();renderPlan()};
+  if(S.plan)renderPlan()}
+function alert2(t){const o=document.getElementById("pout");o.innerHTML=`<p class="small" style="color:var(--bad)">${t}</p>`}
+function renderPlan(){
+  const p=S.plan,c=planCalc(p),ph=curPhase(c),dp=dailyPlan(p,ph),w=weak().filter(x=>x[1]<75).slice(0,3);
+  const intensity=c.gap==null?"":c.gap<=0?"Son puanın hedefin üstünde; plan seni bu seviyede tutmaya ve hata payını azaltmaya odaklanır.":c.gap/c.weeks>3?`<b style="color:var(--bad)">Haftada ${(c.gap/c.weeks).toFixed(1).replace(".",",")} puan artış gerekiyor; bu çok iddialı.</b> Günlük süreyi artırmayı ya da sonraki sınavı hedeflemeyi düşün.`:c.gap/c.weeks>1.5?`Haftada yaklaşık ${(c.gap/c.weeks).toFixed(1).replace(".",",")} puan artış gerekiyor: zorlayıcı ama düzenli çalışmayla mümkün.`:`Haftada yaklaşık ${(c.gap/c.weeks).toFixed(1).replace(".",",")} puan artış yeterli: gerçekçi bir hedef.`;
+  const bandTxt={temel:"Önce kolay puanları topla: kelime, gramer, diyalog, yakın anlam ve cümle tamamlama. Okumada 5 metnin en kolay 3'üne odaklan, kalanlarda eleme yap.",orta:"Gramer, cloze ve cümle tamamlamada hata payını düşür; okumada 4–5 metni bitirecek hıza ulaş. Çeviri ve paragraf tamamlama puan farkı yaratır.",yuksek:`Hiçbir bölümü bırakma: okumada 20 sorunun en az ${c.t.okuma}'ü, gramer ve cloze'da en fazla 2–3 hata. Kelime dağarcığı 3.500+ olmalı; haftada en az bir tam ÖSYM sınavı çöz.`}[c.band];
+  document.getElementById("pout").innerHTML=`
+  <div class="card xhero"><div class="pstat"><div><b>${p.target}</b><span>hedef puan</span></div><div><b>${c.need}</b><span>doğru gerekir (80'de)</span></div><div><b>${c.days}</b><span>gün kaldı</span></div><div><b>${S.goal}</b><span>soru / gün hedefi</span></div></div>
+  <p class="small" style="margin:.6em 0 0">${bandTxt}</p>${intensity?`<p class="small" style="margin:.4em 0 0">${intensity}</p>`:""}</div>
+  <h2>Hangi bölümden kaç doğru?</h2><p class="small mut">Kolay puanlar önce: diyalog, yakın anlam ve kelime gibi kısa sorulardan tam puana yakın, okumadan gerektiği kadar.</p>
+  <div class="tblwrap"><table class="tbl"><tr><th>Bölüm</th><th>Soru</th><th>Hedef doğru</th><th></th></tr>${PTYPES.map(x=>{const v=c.t[x[0]];return `<tr><td><a href="#yapi-${x[0]}">${x[1]}</a></td><td>${x[2]}</td><td><b>${v}</b></td><td style="width:40%"><div class="track"><div class="fill" style="width:${v/x[2]*100}%"></div></div></td></tr>`}).join("")}<tr><td><b>Toplam</b></td><td>80</td><td><b>${c.need}</b></td><td></td></tr></table></div>
+  <h2>Dönemler</h2><div class="phases">${c.phases.map((x,i)=>`<div class="ph ${i+1===ph?"on":""}"><b>${x[0]}</b><span>${x[1]} · ${x[2]} hafta</span><small>${["Gramer üniteleri, şemalar, kelime günlüğü; her gün bir okuma.","Soru tipleri tek tek: ders notu + set; zayıf konulara ağırlık.","Haftada 1–2 tam deneme, yanlış analizi, sık kelimeler tekrarı."][i]}</small></div>`).join("")}</div>
+  <h2>Bugünkü planın · ${p.mins} dakika</h2><p class="small mut">Şu an ${ph}. dönemdesin. Her satır ilgili bölüme götürür.</p>
+  <div class="dplan">${dp.map(([k,mn,txt,href])=>`<a href="${href}"><span class="dm">${mn} dk</span><span><b>${k}</b><small>${txt}</small></span><span class="darr">›</span></a>`).join("")}</div>
+  ${w.length?`<div class="sbox rd" style="margin-top:10px"><b>Bu hafta zayıf konularına ek süre ayır</b>${w.map(x=>`<a href="${catLink(x[0])}">${x[0]} · %${x[1]}</a>`).join(" · ")}</div>`:""}
+  <h2>Haftalık düzen · ${p.days} gün</h2><ul class="wk">
+   <li><b>${p.days>=6?"5":"4"} gün</b> günlük plan (yukarıdaki).</li>
+   <li><b>1 gün</b> tekrar günü: haftanın yanlışları, kelime setleri, şemalar. Aralıklı tekrar: bir konuyu 1, 3, 7 ve 14 gün sonra yeniden çöz.</li>
+   ${ph===3?`<li><b>Hafta sonu</b> 180 dakikalık tam ÖSYM sınavı; cevap kâğıdıyla puanla, ertesi gün yanlış analizi.</li>`:`<li><b>Ayda 2 kez</b> geçmiş bir ÖSYM sınavını süre tutarak çöz; gelişimini cevap kâğıdından izle.</li>`}
+   ${p.days<7?`<li><b>${7-p.days} gün</b> dinlenme. Dinlenmek de planın parçası.</li>`:""}</ul>
+  <h2>Tavsiyeler</h2><div class="sgrid">
+   <div class="sbox bl"><b>Video dersler</b>Bir gramer ünitesine başlamadan önce o konunun video anlatımını izle, sonra uygulamadaki şema ve alıştırmalara geç. Video tek başına yetmez: izlediğin gün en az 20 soru çöz. <a href="https://youtube.com/playlist?list=PLcLB6Eee3OiCpR5kOnKW3pWPQKdBEyOgs" target="_blank" rel="noopener">Örnek gramer oynatma listesi ↗</a></div>
+   <div class="sbox gr"><b>Diğer kaynaklarla tekrar</b>Uygulama konuyu öğretir ve pekiştirir; soru hacmini kitaplardan ve geçmiş ÖSYM sınavlarından al. Hangi kitap ne için: <a href="#ekstra">kaynak rehberi</a>.</div>
+   <div class="sbox yl"><b>Kelime</b>Her gün yeni kelime + dünkülerin tekrarı. Kelimeyi listeden değil cümleden öğren; günde bir İngilizce makale oku${c.band==="yuksek"?" (hedefin için şart)":""}.</div>
+   <div class="sbox lt"><b>Okuma alışkanlığı</b>Her gün 1 metin, süre tutarak. Hedef: bir metni 4 sorusuyla 9–10 dakikada bitirmek.</div>
+   <div class="sbox bl"><b>Yanlış defteri</b>Her yanlış ‘Yanlışlarım’a düşer. Haftada bir oradan tekrar çöz; aynı konudan 3 yanlış varsa o ünitenin ders notuna dön.</div>
+   <div class="sbox rd"><b>Sınav haftası</b>Yeni konu çalışma; tekrar ve 1 deneme. Sınavdan önceki gün hafif tekrar ve erken uyku.</div></div>
+  <p class="small mut">Puan hesabı: YDS'de her doğru 1,25 puan; yanlış doğruyu götürmez. Sınav tarihlerini her zaman ÖSYM'nin sitesinden kontrol et.</p>`;
+}
+
+const FOOT=`<footer class="foot">YDS Pusula · © 2026 <a href="https://github.com/kubrakav/yds-study" target="_blank" rel="noopener">kubrakav</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a> · ücretsiz kullanılabilir, ticari kullanım ve değiştirilmiş kopyalar yasaktır · veri toplanmaz, ilerlemen yalnızca bu tarayıcıda saklanır</footer>`;
 /* ===================== ROUTER ===================== */
 function route(){
   GID++;clearInterval(timer);clearInterval(qt);clearInterval(cdT);tip.hidden=true;document.onkeydown=null;document.querySelectorAll(".sheet,.spark,.confetti").forEach(x=>x.remove());
@@ -1451,7 +1556,8 @@ function route(){
   if(v==='oyun')nav('kelime');
   if(v==='ekstra')nav('deneme');
   if(v==='yapi')nav('taktik');
-  ({bugun:home,kelime,gramer,okuma,deneme,taktik,ilerleme,oyun,ekstra,yapi}[v]||home)(s);
+  if(v==='hedef')nav('bugun');
+  ({bugun:home,kelime,gramer,okuma,deneme,taktik,ilerleme,oyun,ekstra,yapi,hedef}[v]||home)(s);
   scrollTo(0,0);
 }
 const mkObs=new MutationObserver(()=>document.querySelectorAll("#app h1").forEach(h=>{if(!h.querySelector(".mk"))h.innerHTML=`<span class="mk">${h.innerHTML}</span>`}));mkObs.observe(app,{childList:true});
