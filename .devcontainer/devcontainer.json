@@ -1,0 +1,12 @@
+{
+  "name": "YDS Study",
+  "image": "mcr.microsoft.com/devcontainers/python:3",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "YDS Study",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postAttachCommand": "nohup python3 -m http.server 8000 > /tmp/server.log 2>&1 &"
+}
