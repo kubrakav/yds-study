@@ -1,4 +1,4 @@
-# YDS Pusula
+# YDS Çalışma
 
 A free, non-profit study app for Turkish learners preparing for the YDS English exam.
 
@@ -12,10 +12,10 @@ YDS'ye hazırlananlar için ücretsiz, kâr amacı gütmeyen bir çalışma uygu
 |---|---|
 | Hedefim ve planım | Hedef puana göre bölüm bölüm hedef doğru sayısı, dönem planı, günlük program, video ders ve tekrar tavsiyeleri |
 | Soru dağılımı | 80 sorunun soru tiplerine dağılımı; her tip için ders notu, çözüm adımları ve alıştırmalar |
-| Kelime | ÖSYM sınavlarındaki sıklığa göre seçilmiş kelimeler, kelime günlüğü, kartlar, testler |
+| Kelime | 60 günlük kelime günlüğü (~600 kelime), türe göre gruplar (isim, fiil, sıfat, zarf, bağlaç), ÖSYM sıklığına göre kelime listesi, kartlar, testler |
 | Gramer | 15 ünite: konu anlatımı, şemalar, boşluk doldurma, hatayı bul, YDS testleri |
-| Okuma | Farklı alanlardan metinler, dokununca anlamı görünen kelimeler, sorular |
-| Deneme | 30 soruluk denemeler, mini deneme, soru tipine göre setler, geçmiş sınav cevap kâğıdı |
+| Okuma | 26 metin, üç seviye (orta, orta-üst, ileri), dokununca anlamı görünen kelimeler, sorular, 4 aylık kademeli okuma programı |
+| Deneme | 30 soruluk denemeler, mini deneme, soru tipine göre setler (ileri düzey setler dahil), geçmiş sınav cevap kâğıdı |
 | Oyunlar | Bağlam Avı, Edat Avcısı, Eş Anlam Düellosu, Eşleştir |
 
 ## Nasıl kullanılır?
@@ -28,7 +28,7 @@ Uygulama hiçbir veri toplamaz; çerez, istatistik aracı ya da dış servis kul
 
 ## Telif ve lisans
 
-Uygulamadaki sorular, metinler, açıklamalar ve ders notları bu proje için özgün olarak hazırlanmıştır. Herhangi bir yayınevinin ya da ÖSYM'nin sorularını veya metinlerini içermez. Kaynak rehberinde anılan kitaplar yalnızca öneri olarak listelenmiştir.
+Uygulamadaki sorular, metinler, açıklamalar ve ders notları bu proje için özgün olarak hazırlanmıştır. Herhangi bir yayınevinin ya da ÖSYM'nin sorularını veya metinlerini içermez. Bazı okuma metinlerinin olguları kamu malı kaynaklardan (NASA, NOAA, NIH) alınmış ve metinler yeniden yazılmıştır. Kaynak rehberinde anılan kitaplar yalnızca öneri olarak listelenmiştir.
 
 © 2026 [kubrakav](https://github.com/kubrakav). Bu çalışma [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr) lisansı ile paylaşılmaktadır:
 
