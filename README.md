@@ -23,7 +23,7 @@ Uygulama hiçbir veri toplamaz; çerez ya da istatistik aracı kullanmaz. İlerl
 
 Uygulamadaki sorular, metinler, açıklamalar ve ders notları bu proje için özgün olarak hazırlanmıştır. Herhangi bir yayınevinin ya da ÖSYM'nin sorularını veya metinlerini içermez. Kaynak rehberinde anılan kitaplar yalnızca öneri olarak listelenmiştir.
 
-© 2026 Kübra Kav. Bu çalışma [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr) lisansı ile paylaşılmaktadır:
+© 2026 [kubrakav](https://github.com/kubrakav). Bu çalışma [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.tr) lisansı ile paylaşılmaktadır:
 
 - **Ücretsiz kullanabilir ve olduğu gibi paylaşabilirsiniz.**
 - **Atıf:** Paylaşırken bu projeye ve yazarına atıf yapmalısınız.
