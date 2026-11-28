@@ -1256,7 +1256,8 @@ function fillHtml(q,val){
   if(q.tr)h+=`<p class="lbl">Türkçesi</p><p class="trn">${q.tr}</p>`;
   return [ok,h+`<p class="lbl">Neden?</p><p style="margin:.2em 0">${q.ex}</p><button class="rlink" data-src="${catOf(q)}">Konuyu tekrar et: ${catOf(q)} →</button></div>`]}
 let timer=null,qt=null;
-function run(qs,title,bestKey,secs,pq){
+let runStreak=0;
+function run(qs,title,bestKey,secs,pq){runStreak=0;
   clearInterval(timer);clearInterval(qt);let i=0,score=0,picked=null,blank=0;const wrong=[],times=[];let left=secs||0,t0=0;
   const fmt=s=>Math.floor(Math.max(0,s)/60)+":"+String(Math.max(0,s)%60).padStart(2,"0");
   if(secs)timer=setInterval(()=>{left--;const t=document.getElementById("clock");if(t)t.textContent=fmt(left);if(left<=0){clearInterval(timer);end()}},1000);
@@ -1283,6 +1284,7 @@ function run(qs,title,bestKey,secs,pq){
       if(picked!==null)return;clearInterval(qt);picked=j;times.push(Math.round((Date.now()-t0)/1000));const ok=j===q.a;
       if(ok){score++;delete S.wrong[q.id];S.ok[q.id]=1}else{wrong.push(q);S.wrong[q.id]=1;if(j<0)blank++}track(q,ok);save();
       app.querySelectorAll(".pick").forEach(x=>{const k=+x.dataset.j;if(k===q.a)x.classList.add("ok");else if(k===j)x.classList.add("bad");x.disabled=true});
+      if(ok){runStreak++;if(runStreak>=3&&runStreak%3===0)setTimeout(()=>cheer("combo",runStreak,true),350)}else runStreak=0;
       if(ok)sparkle(app.querySelector(".pick.ok"));else zap(app.querySelector(".pick.bad")||app.querySelector(".pick.ok"));
       document.getElementById("fb").innerHTML=fbHtml(q,j)+`<p><button class="pri" id="nx">${i+1<qs.length?"Sonraki soru":"Sonucu gör"}</button></p>`;
       const nx=document.getElementById("nx");nx.onclick=()=>{i++;show();scrollTo(0,0)};if(pq)nx.focus({preventScroll:true});
@@ -1465,7 +1467,7 @@ function edatAvcisi(mode){
     const word=w.w.replace(/\(([^)]+)\)/g,'<i class="mut">($1)</i>');
     app.querySelector("#ebody").innerHTML=`<div class="card pop eacard"><span class="chip">${w.k==="v"?"fiil + edat":"isim + edat"}</span><p class="eaw">${word} <span class="gblank">___</span></p><p class="mut" style="margin:0 0 12px">${w.t}</p><div class="eaopts">${opts.map(o=>`<button class="tile" data-o="${o}">${o}</button>`).join("")}</div><p id="efb" class="small" style="min-height:1.4em;margin:.6em 0 0"></p></div>`;
     app.querySelectorAll(".eaopts .tile").forEach(b=>b.onclick=()=>{if(lock)return;lock=true;const good=b.dataset.o===w.p;track({id:"ea-"+w.w+"-"+w.p},good);
-      if(good){combo++;const pts=1+Math.floor(combo/3);score+=pts;left=Math.min(60,left+1);hit.push(w);b.classList.add("ok");sparkle(b);document.getElementById("efb").innerHTML=`<b style="color:var(--ok)">+${pts}</b> ${w.w.replace(/\s*\(.*?\)/,"")} <b>${w.p}</b>`;setTimeout(round,450)}
+      if(good){combo++;if(combo>=3&&combo%3===0)cheer("combo",combo,true);const pts=1+Math.floor(combo/3);score+=pts;left=Math.min(60,left+1);hit.push(w);b.classList.add("ok");sparkle(b);document.getElementById("efb").innerHTML=`<b style="color:var(--ok)">+${pts}</b> ${w.w.replace(/\s*\(.*?\)/,"")} <b>${w.p}</b>`;setTimeout(round,450)}
       else{combo=0;left=Math.max(0,left-3);miss.push(w);b.classList.add("no");zap(b);app.querySelector(`.eaopts [data-o="${w.p}"]`).classList.add("ok");document.getElementById("efb").innerHTML=`<b style="color:var(--bad)">−3 sn</b> · doğrusu: <b>${w.w.replace(/\s*\(.*?\)/,"")} ${w.p}</b> (${w.t})`;setTimeout(round,1400)}
       document.getElementById("esc").textContent=score;const cb=document.getElementById("ecb");cb.style.display=combo<2?"none":"inline-block";cb.textContent=`x${1+Math.floor(combo/3)} · seri ${combo}`})};
   app.innerHTML=head()+`<div id="ebody"></div>`;document.getElementById("eq").onclick=quit;round();
@@ -1622,14 +1624,15 @@ const FOOT=`<footer class="foot"><img src="avatar.png" alt="" class="footav">YDS
 
 /* ===================== KÜBRA: tanıtım ve tezahürat ===================== */
 const CHEERS={
+ combo:["Go, Kylie, go! 🚀 {n} doğru üst üste!","{n} doğru üst üste! You're doing amazing, sweetie ✨","Seri yapıyorsun, {n} doğru! Good job, Kylie! 👏","{n} doğru üst üste. Durdurulamıyorsun 🔥"],
  great:["Go, Kylie, go! 🚀","You're doing amazing, sweetie! ✨","Good job, Kylie! 👏","Bak sen, kim çalışıyormuş! 💜","Bu tempo 80+ temposu 📈","YDS bunu duyunca biraz titredi 😎"],
  perfect:["Full doğru?! You're doing amazing, sweetie! ✨","Hepsi doğru. Ben de şaşırdım, sen şaşırma 😌","Good job, Kylie! Tek hata yok 👏"],
  goal:["Bugünkü hedef tamam! You're doing amazing, sweetie ✨","Günlük hedef ✔️ Go, Kylie, go! 🚀","Hedef tamam. Şimdi bir çay hak ettin ☕"],
  streak:["{n} gündür bırakmadın! 🔥 Good job, Kylie!","{n} günlük seri! 🔥 You're doing amazing, sweetie!","Seri {n} gün oldu. Go, Kylie, go! 🚀"],
  record:["Yeni rekor! 🏆 Go, Kylie, go!","Rekor kırıldı! You're doing amazing, sweetie ✨","Kendi rekorunu geçtin. Good job, Kylie! 👏"]};
 let lastCheer=0;
-function cheer(kind,n){const now=Date.now();if(now-lastCheer<12000)return;lastCheer=now;
-  const L=CHEERS[kind]||CHEERS.great,t=L[Math.floor(Math.random()*L.length)].replace("{n}",n||"");
+function cheer(kind,n,quick){const now=Date.now();if(now-lastCheer<(quick?2500:12000))return;lastCheer=now;
+  const L=CHEERS[kind]||CHEERS.great,t=(kind==="combo"&&n===3?L[0]:L[Math.floor(Math.random()*L.length)]).replaceAll("{n}",n||"");
   document.querySelectorAll(".buddy").forEach(x=>x.remove());
   const d=document.createElement("div");d.className="buddy";d.setAttribute("role","status");
   d.innerHTML=`<div class="bubble">${t}</div><img src="avatar.png" alt="Kübra">`;document.body.appendChild(d);
